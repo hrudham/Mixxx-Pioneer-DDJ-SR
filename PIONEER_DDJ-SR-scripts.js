@@ -1,34 +1,25 @@
 function PioneerDDJSR() { }
 
-var log = function(message)
-{
-	print('DDJ-SR Debug: ' + message);
-}
-
 PioneerDDJSR.init = function(id)
 {
-	log('init');
-	
 	this.getDeckNumber = function(baseAddress, status)
 	{
 		return status - baseAddress + 0x01;
 	};
 	
 	var alpha = 1.0 / 8;
-	
 	this.settings = 
-	{
-		alpha: alpha,
-        beta: alpha / 32,
-		jogResolution: 720,
-		vinylSpeed: 33 + 1/3
-	};
+		{
+			alpha: alpha,
+			beta: alpha / 32,
+			jogResolution: 720,
+			vinylSpeed: 33 + 1/3
+		};
 }
 
 // The button that enables/disables scratching
 PioneerDDJSR.wheelTouch = function (channel, control, value, status) 
 {
-	log("Touch channel: " + channel);
 	var deck = PioneerDDJSR.getDeckNumber(0x90, status);
 
     if (value == 0x7F) 
@@ -53,7 +44,6 @@ PioneerDDJSR.wheelTouch = function (channel, control, value, status)
 // The wheel that actually controls the scratching
 PioneerDDJSR.wheelTurn = function (channel, control, value, status) 
 {
-	log("Turn channel: " + channel);
 	var deck = PioneerDDJSR.getDeckNumber(0xB0, status);
 
     // See if we're scratching. If not, skip this.
@@ -62,12 +52,11 @@ PioneerDDJSR.wheelTurn = function (channel, control, value, status)
 		return;
 	}
 	
-    // Wheel control centers on 0x40 (64); register it's movement.
+    // The Wheel control centers on 0x40 (64); register it's movement.
     engine.scratchTick(deck, value - 64);
 };
 
 PioneerDDJSR.shutdown = function(id)
 {
-	log('shutdown');
 };
 

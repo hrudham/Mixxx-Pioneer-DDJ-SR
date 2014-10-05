@@ -60,6 +60,91 @@
             </control>
 			<control>
                 <group>[Channel1]</group>
+                <key>pregain</key>
+                <status>0xB0</status>
+                <midino>0x04</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>filterHigh</key>
+                <status>0xB0</status>
+                <midino>0x07</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>filterMid</key>
+                <status>0xB0</status>
+                <midino>0x0B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>filterLow</key>
+                <status>0xB0</status>
+                <midino>0x0F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>rate</key>
+                <status>0xB0</status>
+                <midino>0x00</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>keylock</key>
+                <status>0x90</status>
+                <midino>0x1A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>beatsync</key>
+                <status>0x90</status>
+                <midino>0x58</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>cue_default</key>
+                <status>0x90</status>
+                <midino>0x0C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<!--
+            <control>
+                <group>[Channel1]</group>
+                <key>slip_enabled</key>
+                <status>0x90</status>
+                <midino>0x40</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			-->
+			
+			<!-- Left Jog Wheel -->
+			<control>
+                <group>[Channel1]</group>
                 <key>PioneerDDJSR.wheelTouch</key>
                 <status>0x90</status>
                 <midino>0x36</midino>
@@ -114,7 +199,91 @@
                     <normal/>
                 </options>
             </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>pregain</key>
+                <status>0xB1</status>
+                <midino>0x04</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>filterHigh</key>
+                <status>0xB1</status>
+                <midino>0x07</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>filterMid</key>
+                <status>0xB1</status>
+                <midino>0x0B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>filterLow</key>
+                <status>0xB1</status>
+                <midino>0x0F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>rate</key>
+                <status>0xB1</status>
+                <midino>0x00</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>keylock</key>
+                <status>0x91</status>
+                <midino>0x1A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>beatsync</key>
+                <status>0x91</status>
+                <midino>0x58</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>cue_default</key>
+                <status>0x91</status>
+                <midino>0x0C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<!--
+            <control>
+                <group>[Channel2]</group>
+                <key>slip_enabled</key>
+                <status>0x91</status>
+                <midino>0x40</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			-->
 			
+			<!-- Right Jog Wheel -->
 			<control>
                 <group>[Channel1]</group>
                 <key>PioneerDDJSR.wheelTouch</key>

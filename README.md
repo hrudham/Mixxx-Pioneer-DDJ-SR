@@ -15,7 +15,19 @@ If you just want to get your controller working with with Mixxx without botherin
     - Windows: C:\Program Files\Mixxx\controllers
     - Linux: /usr/share/mixxx/controllers or /usr/local/share/mixxx/controllers
     - OS X: /Applications/Mixxx.app/Contents/Resources/controllers/
-3. Open Mixxx, and enjoy using your (semi-functional) controller
+3. Make sure your Pioneer DDJ-SR is plugged in, turned on, and set up to use DJ software other than Serato (see your user manual, or the ```Controller Setup``` section below)
+4. Open (or restart) Mixxx, and enjoy using your (semi-functional) controller
+
+### Controller Setup
+
+By default, your Pioneer DDJ-SR will be in "Serato-mode". This means that some functionality quite simply won't work in Mix until you turn it off (for example, keylock for the pitch controls). To change this, do the following.
+
+	1. Turn off the Pioneer DDJ-SR
+	2. Hold down ```Shift``` + ```Play``` on the left deck, and turn the power on.
+	3. Turn the left deck's keylock on.
+	4. Restart the controller.
+	
+To use the controller with Serato again, repeat this process and turn the keylock back off again. 
 
 ## What's implemented?
 
@@ -30,6 +42,7 @@ If you just want to get your controller working with with Mixxx without botherin
 ## Whats missing?
 
 - LEDs in general
+- VU Meter
 - Pitch touching via Jog Wheels
 - Performance Pads
 - Filter
