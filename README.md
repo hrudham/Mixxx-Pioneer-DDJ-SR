@@ -31,8 +31,9 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 
 ## What's implemented?
 
-- General Controls
+- General
     - Cross-fader
+	- VU Meter LEDs
 - Deck Controls
     - Volume
     - Play / pause
@@ -45,7 +46,6 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 ## Whats missing?
 
 - LEDs in general
-- VU Meter
 - Jog Wheel Pitch Touching
 - Performance Pads
 - Filter
