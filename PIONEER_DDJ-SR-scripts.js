@@ -2,14 +2,13 @@ function PioneerDDJSR() { }
 
 PioneerDDJSR.init = function(id)
 {
-	this.getDeckNumber = function(baseAddress, status)
-	{
-		return status - baseAddress + 0x01;
-	};
+	// Hook up the VU meters
+	engine.connectControl('[Channel1]', 'VuMeter', 'PioneerDDJSR.vuMeter');
+	engine.connectControl('[Channel2]', 'VuMeter', 'PioneerDDJSR.vuMeter');
 	
-	// Hook up the 
-	engine.connectControl("[Channel1]", "VuMeter", "PioneerDDJSR.vuMeter");
-	engine.connectControl("[Channel2]", "VuMeter", "PioneerDDJSR.vuMeter");
+	// Enable soft-taker on certain controls
+	engine.softTakeover('[Channel1]', 'rate', true);
+	engine.softTakeover('[Channel2]', 'rate', true);
 
 	var alpha = 1.0 / 8;
 	this.settings = 
@@ -22,10 +21,8 @@ PioneerDDJSR.init = function(id)
 }
 
 // Set the VU meter levels.
-PioneerDDJSR.vuMeter = function (value, group, control) 
+PioneerDDJSR.vuMeter = function(value, group, control) 
 {
-	print('value: ' + value + '| group: ' + group + '| control: ' + control);
-
 	// VU meter range is 0 to 127 (or 0x7F).
 	var level = parseInt(value * 0x7F);
 	
@@ -43,16 +40,19 @@ PioneerDDJSR.vuMeter = function (value, group, control)
 	midi.sendShortMsg(channel, 0x02, level);
 }
 
-// The button that enables/disables scratching
-PioneerDDJSR.wheelTouch = function (channel, control, value, status) 
+// Work out the jog-wheel change / delta
+PioneerDDJSR.getJogWheelDelta = function(value)
 {
-	var deck = PioneerDDJSR.getDeckNumber(0x90, status);
+	// The Wheel control centers on 0x40; find out how much it's moved by.
+	return value - 0x40;
+}
 
-    if (value == 0x7F) 
-	{    
-		// If button down
-        var alpha = 1.0 / 8;
-        var beta = alpha / 32;
+// Toggle scratching for a channel
+PioneerDDJSR.toggleScratch = function(channel, isEnabled)
+{
+	var deck = channel + 1; 
+	if (isEnabled) 
+	{
         engine.scratchEnable(
 			deck, 
 			PioneerDDJSR.settings.jogResolution, 
@@ -61,36 +61,96 @@ PioneerDDJSR.wheelTouch = function (channel, control, value, status)
 			PioneerDDJSR.settings.beta);
     }
     else 
-	{    
-		// If button up
+	{
         engine.scratchDisable(deck);
     }
 };
- 
-// The wheel that actually controls the scratching
-PioneerDDJSR.wheelTurn = function (channel, control, value, status) 
-{
-	var deck = PioneerDDJSR.getDeckNumber(0xB0, status);
 
-    // See if we're scratching. If not, skip this.
-    if (!engine.isScratching(deck)) 
-	{
-		return;
-	}
+// Pitch bend a channel
+PioneerDDJSR.pitchBend = function(channel, movement) 
+{
+	var deck = channel + 1; 
+	var group = '[Channel' + deck +']';
 	
-    // The Wheel control centers on 0x40 (64); register it's movement.
-    engine.scratchTick(deck, value - 64);
+	// Limit movement to the range of -3 to 3.
+	movement = movement > 3 ? 3 : movement;
+	movement = movement < -3 ? -3 : movement;
+	
+	engine.setValue(group, 'jog', movement);	
 };
 
-PioneerDDJSR.shutdown = function(id)
+// Detect when the user touches and releases the jog-wheel while 
+// jog-mode is set to vinyl to enable and disable scratching.
+PioneerDDJSR.jogScratchTouch = function(channel, control, value, status) 
+{
+	PioneerDDJSR.toggleScratch(channel, value == 0x7F);
+};
+ 
+// Scratch or seek with the jog-wheel.
+PioneerDDJSR.jogScratchTurn = function(channel, control, value, status) 
+{
+	var deck = channel + 1; 
+	
+    // Only scratch if we're in scratching mode, when 
+	// user is touching the top of the jog-wheel.
+    if (engine.isScratching(deck)) 
+	{
+		// The Wheel control centers on 0x40; find out how much it's moved by.
+		engine.scratchTick(deck, PioneerDDJSR.getJogWheelDelta(value));
+	}
+};
+
+// Called when the jog-mode is not set to vinyl, and the jog wheel is touched.
+PioneerDDJSR.jogSeekTouch = function(channel, control, value, status) 
+{
+	var deck = channel + 1; 
+	var group = '[Channel' + deck +']';
+	
+	if (!engine.getValue(group, 'play'))
+	{
+		// Scratch if we're not playing; otherwise we'll be pitch-bending.
+		PioneerDDJSR.toggleScratch(channel, value == 0x7F);
+	}
+};
+
+PioneerDDJSR.jogSeekTurn = function(channel, control, value, status) 
+{
+	var deck = channel + 1; 
+	
+	// Only scratch if we're in scratching mode, when user is touching 
+	// the top of the jog-wheel and the 'Vinyl' Jog mode is selected.
+    if (engine.isScratching(deck)) 
+	{
+		engine.scratchTick(deck, PioneerDDJSR.getJogWheelDelta(value));
+	}
+	else
+	{
+		PioneerDDJSR.pitchBend(channel, PioneerDDJSR.getJogWheelDelta(value));
+	}
+};
+
+// Pitch bend using the jog-wheel.
+PioneerDDJSR.jogPitchBend = function(channel, control, value, status) 
+{
+	var deck = channel + 1; 
+	var group = '[Channel' + deck +']';
+
+	// Only pitch-bend when actually playing
+	if (engine.getValue(group, 'play'))
+	{
+		PioneerDDJSR.pitchBend(channel, PioneerDDJSR.getJogWheelDelta(value));
+	}
+};
+
+PioneerDDJSR.shutdown = function()
 {
 	// Turn off the VU meter control connection
-	engine.connectControl("[Channel1]", "VuMeter", "PioneerDDJSR.vuMeter", true);
-	engine.connectControl("[Channel2]", "VuMeter", "PioneerDDJSR.vuMeter", true);
+	engine.connectControl('[Channel1]', 'VuMeter', 'PioneerDDJSR.vuMeter', true);
+	engine.connectControl('[Channel2]', 'VuMeter', 'PioneerDDJSR.vuMeter', true);
 	
 	// Reset the VU meters so that we're not left 
 	// with it displaying when nothing is playing.
-	PioneerDDJSR.vuMeter(0, "[Channel1]", "VuMeter");
-	PioneerDDJSR.vuMeter(0, "[Channel2]", "VuMeter");
+	PioneerDDJSR.vuMeter(0, '[Channel1]', 'VuMeter');
+	PioneerDDJSR.vuMeter(0, '[Channel2]', 'VuMeter');
 };
 

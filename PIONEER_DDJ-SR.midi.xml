@@ -145,7 +145,7 @@
 			<!-- Left Jog Wheel -->
 			<control>
                 <group>[Channel1]</group>
-                <key>PioneerDDJSR.wheelTouch</key>
+                <key>PioneerDDJSR.jogScratchTouch</key>
                 <status>0x90</status>
                 <midino>0x36</midino>
                 <options>
@@ -154,13 +154,41 @@
             </control>
 			<control>
                 <group>[Channel1]</group>
-                <key>PioneerDDJSR.wheelTurn</key>
+                <key>PioneerDDJSR.jogSeekTouch</key>
+                <status>0x90</status>
+                <midino>0x35</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>PioneerDDJSR.jogScratchTurn</key>
                 <status>0xB0</status>
                 <midino>0x22</midino>
                 <options>
                     <Script-Binding/>
                 </options>
             </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>PioneerDDJSR.jogPitchBend</key>
+                <status>0xB0</status>
+                <midino>0x21</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>PioneerDDJSR.jogSeekTurn</key>
+                <status>0xB0</status>
+                <midino>0x23</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+			
 			
 			<!-- Right channel -->
             <control>
@@ -285,8 +313,8 @@
 			
 			<!-- Right Jog Wheel -->
 			<control>
-                <group>[Channel1]</group>
-                <key>PioneerDDJSR.wheelTouch</key>
+                <group>[Channel2]</group>
+                <key>PioneerDDJSR.jogScratchTouch</key>
                 <status>0x91</status>
                 <midino>0x36</midino>
                 <options>
@@ -294,10 +322,37 @@
                 </options>
             </control>
 			<control>
-                <group>[Channel1]</group>
-                <key>PioneerDDJSR.wheelTurn</key>
+                <group>[Channel2]</group>
+                <key>PioneerDDJSR.jogSeekTouch</key>
+                <status>0x91</status>
+                <midino>0x35</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>PioneerDDJSR.jogScratchTurn</key>
                 <status>0xB1</status>
                 <midino>0x22</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>PioneerDDJSR.jogPitchBend</key>
+                <status>0xB1</status>
+                <midino>0x21</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>PioneerDDJSR.jogSeekTurn</key>
+                <status>0xB1</status>
+                <midino>0x23</midino>
                 <options>
                     <Script-Binding/>
                 </options>
