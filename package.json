@@ -1,0 +1,23 @@
+{
+  "name": "Mixxx-Pioneer-DDJ-SR",
+  "version": "0.0.1",
+  "description": "Mixxx MIDI mapping for the Pioneer DDJ-SR",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR.git"
+  },
+  "author": "Hilton Rudham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR/issues"
+  },
+  "homepage": "https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR"
+}
