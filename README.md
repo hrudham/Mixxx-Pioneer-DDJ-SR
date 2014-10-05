@@ -22,20 +22,23 @@ If you just want to get your controller working with with Mixxx without botherin
 
 By default, your Pioneer DDJ-SR will be in "Serato-mode". This means that some functionality quite simply won't work in Mix until you turn it off (for example, keylock for the pitch controls). To change this, do the following.
 
-	1. Turn off the Pioneer DDJ-SR
-	2. Hold down ```Shift``` + ```Play``` on the left deck, and turn the power on.
-	3. Turn the left deck's keylock on.
-	4. Restart the controller.
+1. Turn off the Pioneer DDJ-SR
+2. Hold down '''Shift''' + '''Play''' on the left deck, and turn the power on.
+3. Turn the left deck's keylock on.
+4. Restart the controller.
 	
 To use the controller with Serato again, repeat this process and turn the keylock back off again. 
 
 ## What's implemented?
 
 - General Controls
-    - crossfader
+    - Cross-fader
 - Deck Controls
-    - channel volume
-    - play / pause
+    - Volume
+    - Play / pause
+	- High, mid and low EQ dials
+	- Cue button
+	- Sync button (although this works differently than in Serato)
 - Jog Wheels
     - Scratching
 
@@ -43,13 +46,11 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 
 - LEDs in general
 - VU Meter
-- Pitch touching via Jog Wheels
+- Jog Wheel Pitch Touching
 - Performance Pads
 - Filter
 - Effects
-- A whole lot
-
-Be patient; I am working on these :-)
+- A whole lot more stuff. Be patient; I am working on these :-)
 
 ## What will never be implemented?
 
