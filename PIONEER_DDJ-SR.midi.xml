@@ -21,6 +21,45 @@
                 </options>
             </control>
 			
+			<!-- User Interface / Playlist -->
+			<control>
+                <group>[Playlist]</group>
+                <key>LoadSelectedIntoFirstStopped</key>
+                <status>0x96</status>
+                <midino>0x41</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Playlist]</group>
+                <key>PioneerDDJSR.RotarySelector</key>
+                <status>0xB6</status>
+                <midino>0x40</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>LoadSelectedTrack</key>
+                <status>0x96</status>
+                <midino>0x46</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>LoadSelectedTrack</key>
+                <status>0x96</status>
+                <midino>0x47</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			
 			<!-- Left channel -->
             <control>
                 <group>[Channel1]</group>

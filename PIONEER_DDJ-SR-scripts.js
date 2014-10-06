@@ -142,6 +142,20 @@ PioneerDDJSR.jogPitchBend = function(channel, control, value, status)
 	}
 };
 
+// Handles the rotary selector for choosing tracks, library items, crates, etc.
+PioneerDDJSR.RotarySelector = function(channel, control, value, status) 
+{
+	var isMovingDown = value === 0x01;
+	if (isMovingDown)
+	{
+		engine.setValue('[Playlist]', 'SelectNextTrack', '1');
+	}
+	else
+	{
+		engine.setValue('[Playlist]', 'SelectPrevTrack', '1');
+	}
+};
+
 PioneerDDJSR.shutdown = function()
 {
 	// Turn off the VU meter control connection
