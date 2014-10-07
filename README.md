@@ -40,20 +40,17 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 	- High, mid and low EQ dials
 	- Cue button
 	- Sync button (although this works differently than in Serato)
+	- Performance Pads
+		- Hot Cues
 - Jog Wheels
-    - Scratching
+    - Scratch
+	- Pitch Bend
 
 ## Whats missing?
 
-- LEDs in general
-- Jog Wheel Pitch Touching
-- Performance Pads
+- Button LEDs
+- Most of the Performance Pads
 - Filter
 - Effects
 - A whole lot more stuff. Be patient; I am working on these :-)
-
-## What will never be implemented?
-
-Some functions of the DDJ-SR quite simply can't be implemented in Mixxx v1.11.0 due to those features quite literally not being available yet.
-
-- Decks 3 and 4.
+- Decks 3 and 4
