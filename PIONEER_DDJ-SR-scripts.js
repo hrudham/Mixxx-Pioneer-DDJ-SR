@@ -1,4 +1,4 @@
-function PioneerDDJSR() { }
+var PioneerDDJSR = function() { }
 
 PioneerDDJSR.init = function(id)
 {
@@ -11,12 +11,33 @@ PioneerDDJSR.init = function(id)
 	engine.softTakeover('[Channel2]', 'rate', true);
 
 	var alpha = 1.0 / 8;
+	
 	this.settings = 
 		{
 			alpha: alpha,
 			beta: alpha / 32,
 			jogResolution: 720,
 			vinylSpeed: 33 + 1/3
+		};
+		
+	this.enumerations = 
+		{
+			rotarySelector:
+				{
+					targets:
+						{
+							libraries: 0,
+							tracklist: 1
+						}
+				}
+		};
+		
+	this.status = 
+		{
+			rotarySelector: 
+				{
+					target: ''
+				}
 		};
 }
 
@@ -152,7 +173,52 @@ PioneerDDJSR.RotarySelector = function(channel, control, value, status)
 		delta *= -1;
 	}
 	
-	engine.setValue('[Playlist]', 'SelectTrackKnob', delta);
+	var tracklist = PioneerDDJSR.enumerations.rotarySelector.targets.tracklist;
+	var libraries = PioneerDDJSR.enumerations.rotarySelector.targets.libraries;
+	
+	switch(PioneerDDJSR.status.rotarySelector.target)
+	{
+		case tracklist:
+			engine.setValue('[Playlist]', 'SelectTrackKnob', delta);
+			break;
+		case libraries:
+			if (delta > 0)
+			{
+				engine.setValue('[Playlist]', 'SelectNextPlaylist', 1);
+			}
+			else if (delta < 0)
+			{
+				engine.setValue('[Playlist]', 'SelectPrevPlaylist', 1);
+			}
+			
+			break;
+	}
+};
+
+PioneerDDJSR.RotarySelectorClick = function(channel, control, value, status) 
+{
+	// Only trigger when the button is pressed down, not when it comes back up.
+	if (value == 0x7F)
+	{
+		var target = PioneerDDJSR.enumerations.rotarySelector.targets.tracklist;
+		
+		var tracklist = PioneerDDJSR.enumerations.rotarySelector.targets.tracklist;
+		var libraries = PioneerDDJSR.enumerations.rotarySelector.targets.libraries;
+		
+		switch(PioneerDDJSR.status.rotarySelector.target)
+		{
+			case tracklist:
+				target = libraries;
+				break;
+			case libraries:
+				target = tracklist;
+				break;
+		}
+		
+		print('CHANGING TO ' + target);
+			
+		PioneerDDJSR.status.rotarySelector.target = target;
+	}
 };
 
 PioneerDDJSR.shutdown = function()

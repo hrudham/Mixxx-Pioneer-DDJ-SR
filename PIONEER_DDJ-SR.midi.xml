@@ -24,11 +24,11 @@
 			<!-- User Interface / Playlist -->
 			<control>
                 <group>[Playlist]</group>
-                <key>LoadSelectedIntoFirstStopped</key>
+                <key>PioneerDDJSR.RotarySelectorClick</key>
                 <status>0x96</status>
                 <midino>0x41</midino>
                 <options>
-                    <normal/>
+					<Script-Binding/>
                 </options>
             </control>
 			<control>
