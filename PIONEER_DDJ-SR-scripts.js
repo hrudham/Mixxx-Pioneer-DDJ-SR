@@ -5,10 +5,6 @@ PioneerDDJSR.init = function(id)
 	// Hook up the VU meters
 	engine.connectControl('[Channel1]', 'VuMeter', 'PioneerDDJSR.vuMeter');
 	engine.connectControl('[Channel2]', 'VuMeter', 'PioneerDDJSR.vuMeter');
-	
-	// Enable soft-taker on certain controls
-	engine.softTakeover('[Channel1]', 'rate', true);
-	engine.softTakeover('[Channel2]', 'rate', true);
 
 	var alpha = 1.0 / 8;
 	
@@ -36,7 +32,7 @@ PioneerDDJSR.init = function(id)
 		{
 			rotarySelector: 
 				{
-					target: ''
+					target: this.enumerations.rotarySelector.targets.tracklist
 				}
 		};
 }
@@ -215,8 +211,6 @@ PioneerDDJSR.RotarySelectorClick = function(channel, control, value, status)
 				break;
 		}
 		
-		print('CHANGING TO ' + target);
-			
 		PioneerDDJSR.status.rotarySelector.target = target;
 	}
 };

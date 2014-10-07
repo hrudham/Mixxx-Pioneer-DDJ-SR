@@ -17,7 +17,7 @@
                 <status>0xB6</status>
                 <midino>0x1F</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			
@@ -76,25 +76,16 @@
                 <status>0xB0</status>
                 <midino>0x13</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
-            </control>
-			<control>
-                <group>[Channel1]</group>
-                <key>pregain</key>
-                <status>0xB0</status>
-                <midino>0x07</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>			
+            </control>	
             <control>
                 <group>[Channel1]</group>
                 <key>pfl</key> <!-- Pre-fade listen (often for headphones) -->
                 <status>0x80</status>
                 <midino>0x54</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -103,7 +94,7 @@
                 <status>0xB0</status>
                 <midino>0x04</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -112,7 +103,7 @@
                 <status>0xB0</status>
                 <midino>0x07</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -121,7 +112,7 @@
                 <status>0xB0</status>
                 <midino>0x0B</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -130,7 +121,7 @@
                 <status>0xB0</status>
                 <midino>0x0F</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -139,7 +130,7 @@
                 <status>0xB0</status>
                 <midino>0x00</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -175,6 +166,18 @@
                 <key>slip_enabled</key>
                 <status>0x90</status>
                 <midino>0x40</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			-->
+			<!-- Performance Pads -->
+			<!--
+			<control>
+                <group>[Channel1]</group>
+                <key>PioneerDDJSR.jogScratchTouch</key>
+                <status>0x90</status>
+                <midino>0x36</midino>
                 <options>
                     <normal/>
                 </options>
@@ -245,16 +248,7 @@
                 <status>0xB1</status>
                 <midino>0x13</midino>
                 <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>pregain</key>
-                <status>0xB1</status>
-                <midino>0x04</midino>
-                <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -263,7 +257,7 @@
                 <status>0x91</status>
                 <midino>0x54</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -272,7 +266,7 @@
                 <status>0xB1</status>
                 <midino>0x04</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -281,7 +275,7 @@
                 <status>0xB1</status>
                 <midino>0x07</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -290,7 +284,7 @@
                 <status>0xB1</status>
                 <midino>0x0B</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -299,7 +293,7 @@
                 <status>0xB1</status>
                 <midino>0x0F</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
@@ -308,7 +302,7 @@
                 <status>0xB1</status>
                 <midino>0x00</midino>
                 <options>
-                    <normal/>
+                    <soft-takeover/>
                 </options>
             </control>
 			<control>
