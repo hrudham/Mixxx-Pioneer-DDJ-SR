@@ -145,15 +145,14 @@ PioneerDDJSR.jogPitchBend = function(channel, control, value, status)
 // Handles the rotary selector for choosing tracks, library items, crates, etc.
 PioneerDDJSR.RotarySelector = function(channel, control, value, status) 
 {
-	var isMovingDown = value === 0x01;
-	if (isMovingDown)
+	var delta = 0x40 - Math.abs(0x40 - value);
+	var isCounterClockwise = value > 0x40;
+	if (isCounterClockwise)
 	{
-		engine.setValue('[Playlist]', 'SelectNextTrack', '1');
+		delta *= -1;
 	}
-	else
-	{
-		engine.setValue('[Playlist]', 'SelectPrevTrack', '1');
-	}
+	
+	engine.setValue('[Playlist]', 'SelectTrackKnob', delta);
 };
 
 PioneerDDJSR.shutdown = function()
