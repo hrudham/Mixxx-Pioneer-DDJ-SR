@@ -2,19 +2,18 @@ var PioneerDDJSR = function() { }
 
 PioneerDDJSR.init = function(id)
 {
-	PioneerDDJSR.BindControlConnections(false);
-	
 	var alpha = 1.0 / 8;
 	
-	this.settings = 
+	PioneerDDJSR.settings = 
 		{
 			alpha: alpha,
 			beta: alpha / 32,
 			jogResolution: 720,
-			vinylSpeed: 33 + 1/3
+			vinylSpeed: 33 + 1/3,
+			loopIntervals: ['0.03125', '0.0625', '0.125', '0.25', '0.5', '1', '2', '4', '8', '16', '32', '64']
 		};
 		
-	this.enumerations = 
+	PioneerDDJSR.enumerations = 
 		{
 			rotarySelector:
 				{
@@ -26,13 +25,15 @@ PioneerDDJSR.init = function(id)
 				}
 		};
 		
-	this.status = 
+	PioneerDDJSR.status = 
 		{
 			rotarySelector: 
 				{
-					target: this.enumerations.rotarySelector.targets.tracklist
+					target: PioneerDDJSR.enumerations.rotarySelector.targets.tracklist
 				}
 		};
+		
+	PioneerDDJSR.BindControlConnections(false);
 }
 
 PioneerDDJSR.BindControlConnections = function(isUnbinding)
@@ -48,7 +49,45 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 		{
 			engine.connectControl(channelGroup, 'hotcue_' + (i + 1) +'_enabled', 'PioneerDDJSR.HotCuePerformancePadLed', isUnbinding);
 		}
+		
+		for (var interval in PioneerDDJSR.settings.loopIntervals)
+		{
+			engine.connectControl(channelGroup, 'beatloop_' + interval + '_enabled', 'PioneerDDJSR.RollPerformancePadLed', isUnbinding);
+		}
 	}
+};
+
+PioneerDDJSR.RollPerformancePadLed = function(value, group, control) 
+{
+	var channel = null;
+	switch (group)
+	{
+		case '[Channel1]': 
+			channel = 0x00;
+			break;
+		case '[Channel2]': 
+			channel = 0x01;
+			break;
+		case '[Channel3]': 
+			channel = 0x02;
+			break;
+		case '[Channel4]': 
+			channel = 0x03;
+			break;
+	}
+	
+	var padIndex = 0;
+	for(var interval in PioneerDDJSR.settings.loopIntervals)
+	{
+		if (group === 'beatloop_' + interval + '_enabled')
+		{
+			break;
+		}
+	
+		padIndex++;
+	}
+	
+	midi.sendShortMsg(0x97 + channel, 0x10 + padIndex, value ? 0x7F : 0x00);
 };
 
 PioneerDDJSR.HotCuePerformancePadLed = function(value, group, control) 
@@ -158,6 +197,9 @@ PioneerDDJSR.pitchBend = function(channel, movement)
 	var deck = channel + 1; 
 	var group = '[Channel' + deck +']';
 	
+	// Make this a little less sensitive.
+	movement = movement / 5; 
+	
 	// Limit movement to the range of -3 to 3.
 	movement = movement > 3 ? 3 : movement;
 	movement = movement < -3 ? -3 : movement;
@@ -226,6 +268,24 @@ PioneerDDJSR.jogPitchBend = function(channel, control, value, status)
 	{
 		PioneerDDJSR.pitchBend(channel, PioneerDDJSR.getJogWheelDelta(value));
 	}
+};
+
+PioneerDDJSR.RollPerformancePad = function(performanceChannel, control, value, status) 
+{
+	var deck = performanceChannel - 6;  
+	var group = '[Channel' + deck +']';
+	var interval = PioneerDDJSR.settings.loopIntervals[control - 0x10 + 2];
+	
+	if (value == 0x7F)
+	{
+		engine.setValue(group, 'beatloop_' + interval, 1);
+	}
+	else
+	{
+		engine.setValue(group, 'beatloop_' + interval, 0);
+	}
+	
+	midi.sendShortMsg(0x97 + deck - 1, control, value);
 };
 
 // Handles the rotary selector for choosing tracks, library items, crates, etc.
