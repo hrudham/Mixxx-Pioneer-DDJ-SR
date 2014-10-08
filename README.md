@@ -1,10 +1,10 @@
-#Pioneer DDJ-SR MIDI Mapping for Mixxx
+# Pioneer DDJ-SR MIDI Mapping for Mixxx
 
 ## Description 
 
 This is my attempt at mapping the [Pioneer DDJ-SR](http://pioneerdj.com/english/products/controller/ddj-sr.html) for [Mixxx](http://www.mixxx.org/). I wrote this specifically with Mixxx v1.11.0 in mind.
 
-##Hurry up and tell me how to use it
+## How do I use it?
 
 If you just want to get your controller working with with Mixxx without bothering about the details much, then do the following:
 
@@ -39,18 +39,20 @@ To use the controller with Serato again, repeat this process and turn the keyloc
     - Play / pause
 	- High, mid and low EQ dials
 	- Cue button
-	- Sync button (although this works differently than in Serato)
+	- Sync button (although this works differently than in Serato; still to be fixed)
 	- Performance Pads
 		- Hot Cues
+		- Rolls
 - Jog Wheels
-    - Scratch
-	- Pitch Bend
+    - Scratching
+	- Pitch Bending
 
-## Whats missing?
+## What's missing?
 
-- Button LEDs
+- Button LEDs in most places
 - Most of the Performance Pads
 - Filter
 - Effects
+- Slip
 - A whole lot more stuff. Be patient; I am working on these :-)
 - Decks 3 and 4
