@@ -2,10 +2,8 @@ var PioneerDDJSR = function() { }
 
 PioneerDDJSR.init = function(id)
 {
-	// Hook up the VU meters
-	engine.connectControl('[Channel1]', 'VuMeter', 'PioneerDDJSR.vuMeter');
-	engine.connectControl('[Channel2]', 'VuMeter', 'PioneerDDJSR.vuMeter');
-
+	PioneerDDJSR.BindControlConnections(false);
+	
 	var alpha = 1.0 / 8;
 	
 	this.settings = 
@@ -36,6 +34,77 @@ PioneerDDJSR.init = function(id)
 				}
 		};
 }
+
+PioneerDDJSR.BindControlConnections = function(isUnbinding)
+{
+	for (var channelIndex = 1; channelIndex <= 4; channelIndex++)
+	{
+		// Hook up the VU meters
+		var channelGroup = '[Channel' + channelIndex + ']';
+		engine.connectControl(channelGroup, 'VuMeter', 'PioneerDDJSR.vuMeter', isUnbinding);
+		
+		// Hook up the hot cue performance pads
+		for (var i = 0; i < 8; i++)
+		{
+			engine.connectControl(channelGroup, 'hotcue_' + (i + 1) +'_enabled', 'PioneerDDJSR.HotCuePerformancePadLed', isUnbinding);
+		}
+	}
+};
+
+PioneerDDJSR.HotCuePerformancePadLed = function(value, group, control) 
+{
+	var channel = null;
+	switch (group)
+	{
+		case '[Channel1]': 
+			channel = 0x00;
+			break;
+		case '[Channel2]': 
+			channel = 0x01;
+			break;
+		case '[Channel3]': 
+			channel = 0x02;
+			break;
+		case '[Channel4]': 
+			channel = 0x03;
+			break;
+	}
+	
+	var padIndex = null;
+	switch (control)
+	{
+		case 'hotcue_1_enabled':
+			padIndex = 0;
+			break;
+		case 'hotcue_2_enabled':
+			padIndex = 1;
+			break;
+		case 'hotcue_3_enabled':
+			padIndex = 2;
+			break;
+		case 'hotcue_4_enabled':
+			padIndex = 3;
+			break;
+		case 'hotcue_5_enabled':
+			padIndex = 4;
+			break;
+		case 'hotcue_6_enabled':
+			padIndex = 5;
+			break;
+		case 'hotcue_7_enabled':
+			padIndex = 6;
+			break;
+		case 'hotcue_8_enabled':
+			padIndex = 7;
+			break;		
+	}
+	
+	// Pad LED without shift key
+	midi.sendShortMsg(0x97 + channel, 0x00 + padIndex, value ? 0x7F : 0x00);
+	
+	// Pad LED with shift key
+	midi.sendShortMsg(0x97 + channel, 0x00 + padIndex + 0x08, value ? 0x7F : 0x00);
+};
 
 // Set the VU meter levels.
 PioneerDDJSR.vuMeter = function(value, group, control) 
@@ -217,9 +286,7 @@ PioneerDDJSR.RotarySelectorClick = function(channel, control, value, status)
 
 PioneerDDJSR.shutdown = function()
 {
-	// Turn off the VU meter control connection
-	engine.connectControl('[Channel1]', 'VuMeter', 'PioneerDDJSR.vuMeter', true);
-	engine.connectControl('[Channel2]', 'VuMeter', 'PioneerDDJSR.vuMeter', true);
+	PioneerDDJSR.BindControlConnections(true);
 	
 	// Reset the VU meters so that we're not left 
 	// with it displaying when nothing is playing.

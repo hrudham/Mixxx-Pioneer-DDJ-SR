@@ -28,7 +28,7 @@
                 <status>0x96</status>
                 <midino>0x41</midino>
                 <options>
-					<Script-Binding/>
+					<script-binding />
                 </options>
             </control>
 			<control>
@@ -37,7 +37,7 @@
                 <status>0xB6</status>
                 <midino>0x40</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -324,7 +324,7 @@
                 <status>0x90</status>
                 <midino>0x36</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -333,7 +333,7 @@
                 <status>0x90</status>
                 <midino>0x35</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -342,7 +342,7 @@
                 <status>0xB0</status>
                 <midino>0x22</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -351,7 +351,7 @@
                 <status>0xB0</status>
                 <midino>0x21</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -360,10 +360,9 @@
                 <status>0xB0</status>
                 <midino>0x23</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
-			
 			
 			<!-- Right channel -->
             <control>
@@ -629,7 +628,7 @@
                 <status>0x91</status>
                 <midino>0x36</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -638,7 +637,7 @@
                 <status>0x91</status>
                 <midino>0x35</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -647,7 +646,7 @@
                 <status>0xB1</status>
                 <midino>0x22</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -656,7 +655,7 @@
                 <status>0xB1</status>
                 <midino>0x21</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			<control>
@@ -665,7 +664,7 @@
                 <status>0xB1</status>
                 <midino>0x23</midino>
                 <options>
-                    <Script-Binding/>
+                    <script-binding />
                 </options>
             </control>
 			
