@@ -4,13 +4,22 @@ PioneerDDJSR.init = function(id)
 {
 	var alpha = 1.0 / 8;
 	
+	PioneerDDJSR.channels = 
+		{	
+			0x00: {},
+			0x01: {},
+			0x02: {},
+			0x03: {}
+		};
+	
 	PioneerDDJSR.settings = 
 		{
 			alpha: alpha,
 			beta: alpha / 32,
 			jogResolution: 720,
 			vinylSpeed: 33 + 1/3,
-			loopIntervals: ['0.03125', '0.0625', '0.125', '0.25', '0.5', '1', '2', '4', '8', '16', '32', '64']
+			loopIntervals: ['0.03125', '0.0625', '0.125', '0.25', '0.5', '1', '2', '4', '8', '16', '32', '64'],
+			safeScratchTimeout: 20 // 20ms is the minimum allowed here.
 		};
 		
 	PioneerDDJSR.enumerations = 
@@ -22,6 +31,13 @@ PioneerDDJSR.init = function(id)
 							libraries: 0,
 							tracklist: 1
 						}
+				},
+			channelGroups:
+				{
+					'[Channel1]': 0x00,
+					'[Channel2]': 0x01,
+					'[Channel3]': 0x02,
+					'[Channel4]': 0x03
 				}
 		};
 		
@@ -57,29 +73,19 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 	}
 };
 
+// Lights up the LEDs for beat-loops. Only works with the number 1, 2, 
+// 4 and 8 unfortunately, so 0.5 and 0.125, 16 and 32 will not show up.
+// We work around this by highlighting the pads when you press them, but 
+// if you change the loop interval while still holding the pad, it may not 
+// always reflect.
 PioneerDDJSR.RollPerformancePadLed = function(value, group, control) 
 {
-	var channel = null;
-	switch (group)
-	{
-		case '[Channel1]': 
-			channel = 0x00;
-			break;
-		case '[Channel2]': 
-			channel = 0x01;
-			break;
-		case '[Channel3]': 
-			channel = 0x02;
-			break;
-		case '[Channel4]': 
-			channel = 0x03;
-			break;
-	}
+	var channel = PioneerDDJSR.enumerations.channelGroups[group];
 	
 	var padIndex = 0;
-	for(var interval in PioneerDDJSR.settings.loopIntervals)
+	for (var i = 0; i < 8; i++)
 	{
-		if (group === 'beatloop_' + interval + '_enabled')
+		if (control === 'beatloop_' + PioneerDDJSR.settings.loopIntervals[i + 2] + '_enabled')
 		{
 			break;
 		}
@@ -92,50 +98,18 @@ PioneerDDJSR.RollPerformancePadLed = function(value, group, control)
 
 PioneerDDJSR.HotCuePerformancePadLed = function(value, group, control) 
 {
-	var channel = null;
-	switch (group)
-	{
-		case '[Channel1]': 
-			channel = 0x00;
-			break;
-		case '[Channel2]': 
-			channel = 0x01;
-			break;
-		case '[Channel3]': 
-			channel = 0x02;
-			break;
-		case '[Channel4]': 
-			channel = 0x03;
-			break;
-	}
+	var channel = PioneerDDJSR.enumerations.channelGroups[group];
 	
 	var padIndex = null;
-	switch (control)
+	
+	for (var i = 0; i < 8; i++)
 	{
-		case 'hotcue_1_enabled':
-			padIndex = 0;
+		if (control === 'hotcue_' + i + '_enabled')
+		{
 			break;
-		case 'hotcue_2_enabled':
-			padIndex = 1;
-			break;
-		case 'hotcue_3_enabled':
-			padIndex = 2;
-			break;
-		case 'hotcue_4_enabled':
-			padIndex = 3;
-			break;
-		case 'hotcue_5_enabled':
-			padIndex = 4;
-			break;
-		case 'hotcue_6_enabled':
-			padIndex = 5;
-			break;
-		case 'hotcue_7_enabled':
-			padIndex = 6;
-			break;
-		case 'hotcue_8_enabled':
-			padIndex = 7;
-			break;		
+		}
+		
+		padIndex = i;
 	}
 	
 	// Pad LED without shift key
@@ -207,11 +181,50 @@ PioneerDDJSR.pitchBend = function(channel, movement)
 	engine.setValue(group, 'jog', movement);	
 };
 
+// Schedule disabling scratch. We don't do this immediately on 
+// letting go of the jog wheel, as that result in a pitch-bend.
+// Instead, we set up a time that disables it, but cancel and
+// re-register that timer whenever we need to to postpone the disable.
+// Very much a hack, but it works, and I'm yet to find a better solution.
+PioneerDDJSR.scheduleDisableScratch = function(channel)
+{
+	PioneerDDJSR.channels[channel].disableScratchTimer = engine.beginTimer(
+		PioneerDDJSR.settings.safeScratchTimeout, 
+		'PioneerDDJSR.toggleScratch(' + channel + ', false)', 
+		true);
+};
+
+// If scratch-disabling has been schedule, then unschedule it.
+PioneerDDJSR.unscheduleDisableScratch = function(channel)
+{
+	if (PioneerDDJSR.channels[channel].disableScratchTimer)
+	{
+		engine.stopTimer(PioneerDDJSR.channels[channel].disableScratchTimer);
+	}
+};
+
+// Postpone scratch disabling by a few milliseconds. This is
+// useful if you were scratching, but let of of the jog wheel.
+// Without this, you'd end up with a pitch-bend in that case.
+PioneerDDJSR.postponeDisableScratch = function(channel)
+{
+	PioneerDDJSR.unscheduleDisableScratch(channel);
+	PioneerDDJSR.scheduleDisableScratch(channel);
+};
+
 // Detect when the user touches and releases the jog-wheel while 
 // jog-mode is set to vinyl to enable and disable scratching.
 PioneerDDJSR.jogScratchTouch = function(channel, control, value, status) 
 {
-	PioneerDDJSR.toggleScratch(channel, value == 0x7F);
+	if (value == 0x7F)
+	{
+		PioneerDDJSR.unscheduleDisableScratch(channel);	
+		PioneerDDJSR.toggleScratch(channel, true);
+	}
+	else
+	{
+		PioneerDDJSR.scheduleDisableScratch(channel);
+	}
 };
  
 // Scratch or seek with the jog-wheel.
@@ -223,8 +236,29 @@ PioneerDDJSR.jogScratchTurn = function(channel, control, value, status)
 	// user is touching the top of the jog-wheel.
     if (engine.isScratching(deck)) 
 	{
-		// The Wheel control centers on 0x40; find out how much it's moved by.
 		engine.scratchTick(deck, PioneerDDJSR.getJogWheelDelta(value));
+	}
+};
+
+// Pitch bend using the jog-wheel, or finish a scratch when the wheel 
+// is still turning after having released it.
+PioneerDDJSR.jogPitchBend = function(channel, control, value, status) 
+{
+	var deck = channel + 1; 
+	var group = '[Channel' + deck +']';
+
+	if (engine.isScratching(deck))
+	{
+		engine.scratchTick(deck, PioneerDDJSR.getJogWheelDelta(value));
+		PioneerDDJSR.postponeDisableScratch(channel);
+	}
+	else
+	{	
+		// Only pitch-bend when actually playing
+		if (engine.getValue(group, 'play'))
+		{
+			PioneerDDJSR.pitchBend(channel, PioneerDDJSR.getJogWheelDelta(value));
+		}
 	}
 };
 
@@ -234,19 +268,24 @@ PioneerDDJSR.jogSeekTouch = function(channel, control, value, status)
 	var deck = channel + 1; 
 	var group = '[Channel' + deck +']';
 	
+	// Only enable scratching if we're in scratching mode, when user is  
+	// touching the top of the jog-wheel and the 'Vinyl' jog mode is 
+	// selected.
 	if (!engine.getValue(group, 'play'))
 	{
-		// Scratch if we're not playing; otherwise we'll be pitch-bending.
+		// Scratch if we're not playing; otherwise we'll be 
+		// pitch-bending here, which we don't want.
 		PioneerDDJSR.toggleScratch(channel, value == 0x7F);
 	}
 };
 
+// Call when the jog-wheel is turned. The related jogSeekTouch function 
+// sets up whether we will be scratching or pitch-bending depending 
+// on whether a song is playing or not.
 PioneerDDJSR.jogSeekTurn = function(channel, control, value, status) 
 {
 	var deck = channel + 1; 
 	
-	// Only scratch if we're in scratching mode, when user is touching 
-	// the top of the jog-wheel and the 'Vinyl' Jog mode is selected.
     if (engine.isScratching(deck)) 
 	{
 		engine.scratchTick(deck, PioneerDDJSR.getJogWheelDelta(value));
@@ -257,19 +296,8 @@ PioneerDDJSR.jogSeekTurn = function(channel, control, value, status)
 	}
 };
 
-// Pitch bend using the jog-wheel.
-PioneerDDJSR.jogPitchBend = function(channel, control, value, status) 
-{
-	var deck = channel + 1; 
-	var group = '[Channel' + deck +']';
-
-	// Only pitch-bend when actually playing
-	if (engine.getValue(group, 'play'))
-	{
-		PioneerDDJSR.pitchBend(channel, PioneerDDJSR.getJogWheelDelta(value));
-	}
-};
-
+// This handles the eight performance pads below the jog-wheels 
+// that deal with rolls or beat loops.
 PioneerDDJSR.RollPerformancePad = function(performanceChannel, control, value, status) 
 {
 	var deck = performanceChannel - 6;  
@@ -348,9 +376,11 @@ PioneerDDJSR.shutdown = function()
 {
 	PioneerDDJSR.BindControlConnections(true);
 	
-	// Reset the VU meters so that we're not left 
-	// with it displaying when nothing is playing.
+	// Reset the VU meters so that we're not left with
+	// it displaying something when nothing is playing.
 	PioneerDDJSR.vuMeter(0, '[Channel1]', 'VuMeter');
 	PioneerDDJSR.vuMeter(0, '[Channel2]', 'VuMeter');
+	PioneerDDJSR.vuMeter(0, '[Channel3]', 'VuMeter');
+	PioneerDDJSR.vuMeter(0, '[Channel4]', 'VuMeter');
 };
 
