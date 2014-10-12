@@ -48,7 +48,7 @@ PioneerDDJSR.init = function(id)
 					target: PioneerDDJSR.enumerations.rotarySelector.targets.tracklist
 				}
 		};
-		
+				
 	PioneerDDJSR.BindControlConnections(false);
 }
 
@@ -56,12 +56,16 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 {
 	for (var channelIndex = 1; channelIndex <= 4; channelIndex++)
 	{
-		// Hook up the VU meters
 		var channelGroup = '[Channel' + channelIndex + ']';
+	
+		// Hook up the VU meters
 		engine.connectControl(channelGroup, 'VuMeter', 'PioneerDDJSR.vuMeter', isUnbinding);
 		
 		// Play / Pause LEDs
 		engine.connectControl(channelGroup, 'play', 'PioneerDDJSR.PlayPauseLed', isUnbinding);
+		
+		// Keylock LEDs
+		engine.connectControl(channelGroup, 'keylock', 'PioneerDDJSR.KeyLockLed', isUnbinding);
 		
 		// Hook up the hot cue performance pads
 		for (var i = 0; i < 8; i++)
@@ -69,11 +73,19 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 			engine.connectControl(channelGroup, 'hotcue_' + (i + 1) +'_enabled', 'PioneerDDJSR.HotCuePerformancePadLed', isUnbinding);
 		}
 		
+		// Hook up the roll performance pads
 		for (var interval in PioneerDDJSR.settings.loopIntervals)
 		{
 			engine.connectControl(channelGroup, 'beatloop_' + interval + '_enabled', 'PioneerDDJSR.RollPerformancePadLed', isUnbinding);
 		}
 	}
+};
+
+// Handles the keylock LED.
+PioneerDDJSR.KeyLockLed = function(value, group, control) 
+{
+	var channel = PioneerDDJSR.enumerations.channelGroups[group];	
+	midi.sendShortMsg(0x90 + channel, 0x1A, value ? 0x7F : 0x00);
 };
 
 // This handles the Play button LED to let you know if a song is playing or not.
