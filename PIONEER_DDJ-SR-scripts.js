@@ -61,11 +61,14 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 		// Hook up the VU meters
 		engine.connectControl(channelGroup, 'VuMeter', 'PioneerDDJSR.vuMeter', isUnbinding);
 		
-		// Play / Pause LEDs
-		engine.connectControl(channelGroup, 'play', 'PioneerDDJSR.PlayPauseLed', isUnbinding);
+		// Play / Pause LED
+		engine.connectControl(channelGroup, 'play', 'PioneerDDJSR.PlayLeds', isUnbinding);
 		
-		// Keylock LEDs
-		engine.connectControl(channelGroup, 'keylock', 'PioneerDDJSR.KeyLockLed', isUnbinding);
+		// Cue LED
+		engine.connectControl(channelGroup, 'cue_default', 'PioneerDDJSR.CueLeds', isUnbinding);
+		
+		// Keylock LED
+		engine.connectControl(channelGroup, 'keylock', 'PioneerDDJSR.KeyLockLeds', isUnbinding);
 		
 		// Hook up the hot cue performance pads
 		for (var i = 0; i < 8; i++)
@@ -81,18 +84,26 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 	}
 };
 
-// Handles the keylock LED.
-PioneerDDJSR.KeyLockLed = function(value, group, control) 
+// This handles LEDs related to the cue_default event.
+PioneerDDJSR.CueLeds = function(value, group, control) 
 {
 	var channel = PioneerDDJSR.enumerations.channelGroups[group];	
-	midi.sendShortMsg(0x90 + channel, 0x1A, value ? 0x7F : 0x00);
+	midi.sendShortMsg(0x90 + channel, 0x0C, value ? 0x7F : 0x00); // Cue LED
 };
 
-// This handles the Play button LED to let you know if a song is playing or not.
-PioneerDDJSR.PlayPauseLed = function(value, group, control) 
+// This handles LEDs related to the keylock event.
+PioneerDDJSR.KeyLockLeds = function(value, group, control) 
 {
 	var channel = PioneerDDJSR.enumerations.channelGroups[group];	
-	midi.sendShortMsg(0x90 + channel, 0x0B, value ? 0x7F : 0x00);
+	midi.sendShortMsg(0x90 + channel, 0x1A, value ? 0x7F : 0x00); // Keylock LED
+};
+
+// This handles LEDs related to the play event.
+PioneerDDJSR.PlayLeds = function(value, group, control) 
+{
+	var channel = PioneerDDJSR.enumerations.channelGroups[group];	
+	midi.sendShortMsg(0x90 + channel, 0x0B, value ? 0x7F : 0x00); // Play / Pause LED
+	midi.sendShortMsg(0x90 + channel, 0x0C, value ? 0x7F : 0x00); // Cue LED
 };
 
 // Lights up the LEDs for beat-loops. Only works with the number 1, 2, 
@@ -115,7 +126,8 @@ PioneerDDJSR.RollPerformancePadLed = function(value, group, control)
 		padIndex++;
 	}
 	
-	midi.sendShortMsg(0x97 + channel, 0x10 + padIndex, value ? 0x7F : 0x00);
+	// Toggle the relevant Performance Pad LED
+	midi.sendShortMsg(0x97 + channel, 0x10 + padIndex, value ? 0x7F : 0x00); 
 };
 
 PioneerDDJSR.HotCuePerformancePadLed = function(value, group, control) 
