@@ -67,6 +67,9 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 		// Cue LED
 		engine.connectControl(channelGroup, 'cue_default', 'PioneerDDJSR.CueLeds', isUnbinding);
 		
+		// PFL / Headphone Cue LED
+		engine.connectControl(channelGroup, 'pfl', 'PioneerDDJSR.HeadphoneCueLed', isUnbinding);
+		
 		// Keylock LED
 		engine.connectControl(channelGroup, 'keylock', 'PioneerDDJSR.KeyLockLeds', isUnbinding);
 		
@@ -82,6 +85,13 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 			engine.connectControl(channelGroup, 'beatloop_' + interval + '_enabled', 'PioneerDDJSR.RollPerformancePadLed', isUnbinding);
 		}
 	}
+};
+
+// This handles LEDs related to the PFL / Headphone Cue event.
+PioneerDDJSR.HeadphoneCueLed = function(value, group, control) 
+{
+	var channel = PioneerDDJSR.enumerations.channelGroups[group];	
+	midi.sendShortMsg(0x90 + channel, 0x54, value ? 0x7F : 0x00); // Headphone Cue LED
 };
 
 // This handles LEDs related to the cue_default event.

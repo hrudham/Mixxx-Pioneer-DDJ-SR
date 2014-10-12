@@ -82,10 +82,10 @@
             <control>
                 <group>[Channel1]</group>
                 <key>pfl</key> <!-- Pre-fade listen (often for headphones) -->
-                <status>0x80</status>
+                <status>0x90</status>
                 <midino>0x54</midino>
                 <options>
-                    <soft-takeover/>
+                    <normal/>
                 </options>
             </control>
 			<control>
@@ -462,7 +462,7 @@
                 <status>0x91</status>
                 <midino>0x54</midino>
                 <options>
-                    <soft-takeover/>
+                    <normal/>
                 </options>
             </control>
 			<control>
