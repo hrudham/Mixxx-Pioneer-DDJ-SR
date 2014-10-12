@@ -60,6 +60,9 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 		var channelGroup = '[Channel' + channelIndex + ']';
 		engine.connectControl(channelGroup, 'VuMeter', 'PioneerDDJSR.vuMeter', isUnbinding);
 		
+		// Play / Pause LEDs
+		engine.connectControl(channelGroup, 'play', 'PioneerDDJSR.PlayPauseLed', isUnbinding);
+		
 		// Hook up the hot cue performance pads
 		for (var i = 0; i < 8; i++)
 		{
@@ -71,6 +74,13 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 			engine.connectControl(channelGroup, 'beatloop_' + interval + '_enabled', 'PioneerDDJSR.RollPerformancePadLed', isUnbinding);
 		}
 	}
+};
+
+// This handles the Play button LED to let you know if a song is playing or not.
+PioneerDDJSR.PlayPauseLed = function(value, group, control) 
+{
+	var channel = PioneerDDJSR.enumerations.channelGroups[group];	
+	midi.sendShortMsg(0x90 + channel, 0x0B, value ? 0x7F : 0x00);
 };
 
 // Lights up the LEDs for beat-loops. Only works with the number 1, 2, 
