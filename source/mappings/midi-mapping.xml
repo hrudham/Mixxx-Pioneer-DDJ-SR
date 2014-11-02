@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset mixxxVersion="1.10.0+" schemaVersion="1">
+    <info>
+        <name><%-settings.name%></name>
+        <author><%-settings.author%></author>
+        <description><%-settings.description%></description>
+    </info>
+    <controller id="PIONEER">
+        <scriptfiles>
+            <file functionprefix="<%-settings.functionPrefix%>" filename="<%-settings.filePrefix%>-scripts.js" />
+        </scriptfiles>
+		<controls><%for (var i = 0; i < controls.length; i++) {%>
+			<control>
+				<group><%-controls[i].group%></group>
+				<key><%-controls[i].key%></key>
+				<status><%-controls[i].status%></status>
+				<midino><%-controls[i].midino%></midino>
+				<options>
+					<%for (var j = 0; j < controls[i].options.length; j++) {%><<%-controls[i].options[j]%> /><%}%>
+				</options>
+			</control><%}%>
+		</controls>
+        <outputs />
+    </controller>
+</MixxxControllerPreset>

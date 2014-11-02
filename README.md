@@ -9,8 +9,8 @@ This is my attempt at mapping the [Pioneer DDJ-SR](http://pioneerdj.com/english/
 If you just want to get your controller working with with Mixxx without bothering about the details much, then do the following:
 
 1. Download the following two files:
-    - [PIONEER_DDJ-SR.midi.xml](https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR/blob/master/PIONEER_DDJ-SR.midi.xml)
-    - [PIONEER_DDJ-SR-scripts.js](https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR/blob/master/PIONEER_DDJ-SR-scripts.js)
+    - [PIONEER_DDJ-SR.midi.xml](https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR/blob/master/bin/PIONEER_DDJ-SR.midi.xml)
+    - [PIONEER_DDJ-SR-scripts.js](https://github.com/hrudham/Mixxx-Pioneer-DDJ-SR/blob/master/bin/PIONEER_DDJ-SR-scripts.js)
 2. Copy these to the `[Mixxx Directory]/controllers` folder. This will probably be one of the following locations:
     - Windows: `C:\Program Files\Mixxx\controllers`
     - Linux: `/usr/share/mixxx/controllers or /usr/local/share/mixxx/controllers`
@@ -56,3 +56,18 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 - Slip
 - A whole lot more stuff. Be patient; I am working on these :-)
 - Decks 3 and 4
+
+## I want to help. How do I build this?
+
+In order to make things a bit easier to understand and modularised, I've written a basic build process for this mapping. This allows me to do things like define all the midi-mappings in JavaScript, and then let Node build up the final XML file that Mixxx understands. In order to do this, you'll need to do the following:
+
+1. Install [NodeJS](http://nodejs.org/) if you haven't already
+2. Get all of the node dependencies for this project: 
+    1. Open a console, command prompt or powershell.
+    2. Navigate go to the project folder.
+    3. Enter ```npm install```
+3. Build the project
+    1. Open a console, command prompt or powershell.
+    2. Navigate go to the project folder.
+    3. Enter ```gulp```
+
