@@ -350,11 +350,11 @@ PioneerDDJSR.RollPerformancePad = function(performanceChannel, control, value, s
 	
 	if (value == 0x7F)
 	{
-		engine.setValue(group, 'beatloop_' + interval, 1);
+		engine.setValue(group, 'beatlooproll_' + interval + '_activate', 1);
 	}
 	else
 	{
-		engine.setValue(group, 'beatloop_' + interval, 0);
+		engine.setValue(group, 'beatlooproll_' + interval + '_activate', 0);
 	}
 	
 	midi.sendShortMsg(0x97 + deck - 1, control, value);
