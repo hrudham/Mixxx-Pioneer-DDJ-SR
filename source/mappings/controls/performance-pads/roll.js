@@ -1,12 +1,12 @@
 var manager = require('./../../../../control-manager.js');
 
-for (var i = 0; i < 4; i++)
+for (var channelIndex = 0; channelIndex < 4; channelIndex++)
 {
-	var group = 'Channel' + (i + 1);
+	var group = 'Channel' + (channelIndex + 1);
 
-	for (var j = 0; j < 8; j++)
+	for (var padIndex = 0; padIndex < 8; padIndex++)
 	{
-		manager.add(group, 'PioneerDDJSR.RollPerformancePad', 0x97 + i, 0x10 + j);
+		manager.add(group, 'PioneerDDJSR.RollPerformancePad', 0x97 + channelIndex, 0x10 + padIndex);
 	}
 }
 

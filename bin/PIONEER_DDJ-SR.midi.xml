@@ -1514,3009 +1514,219 @@
 				</options>
 			</control>
 			<control>
-				<group>[Master]</group>
-				<key>crossfader</key>
-				<status>0xB6</status>
-				<midino>0x1F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Playlist]</group>
-				<key>PioneerDDJSR.RotarySelectorClick</key>
-				<status>0x96</status>
-				<midino>0x41</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Playlist]</group>
-				<key>PioneerDDJSR.RotarySelector</key>
-				<status>0xB6</status>
-				<midino>0x40</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>play</key>
-				<status>0x90</status>
-				<midino>0x0B</midino>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x30</midino>
 				<options>
 					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel1]</group>
-				<key>pfl</key>
-				<status>0x90</status>
-				<midino>0x54</midino>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x31</midino>
 				<options>
 					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel1]</group>
-				<key>keylock</key>
-				<status>0x90</status>
-				<midino>0x1A</midino>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x32</midino>
 				<options>
 					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel1]</group>
-				<key>beatsync</key>
-				<status>0x90</status>
-				<midino>0x58</midino>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x33</midino>
 				<options>
 					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel1]</group>
-				<key>cue_default</key>
-				<status>0x90</status>
-				<midino>0x0C</midino>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x34</midino>
 				<options>
 					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel1]</group>
-				<key>LoadSelectedTrack</key>
-				<status>0x96</status>
-				<midino>0x46</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>pregain</key>
-				<status>0xB0</status>
-				<midino>0x04</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>filterHigh</key>
-				<status>0xB0</status>
-				<midino>0x07</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>filterMid</key>
-				<status>0xB0</status>
-				<midino>0x0B</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>filterLow</key>
-				<status>0xB0</status>
-				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>rate</key>
-				<status>0xB0</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>volume</key>
-				<status>0xB0</status>
-				<midino>0x13</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>play</key>
-				<status>0x91</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>pfl</key>
-				<status>0x91</status>
-				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>keylock</key>
-				<status>0x91</status>
-				<midino>0x1A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>beatsync</key>
-				<status>0x91</status>
-				<midino>0x58</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>cue_default</key>
-				<status>0x91</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>LoadSelectedTrack</key>
-				<status>0x96</status>
-				<midino>0x47</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>pregain</key>
-				<status>0xB1</status>
-				<midino>0x04</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>filterHigh</key>
-				<status>0xB1</status>
-				<midino>0x07</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>filterMid</key>
-				<status>0xB1</status>
-				<midino>0x0B</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>filterLow</key>
-				<status>0xB1</status>
-				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>rate</key>
-				<status>0xB1</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>volume</key>
-				<status>0xB1</status>
-				<midino>0x13</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>play</key>
-				<status>0x92</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>pfl</key>
-				<status>0x92</status>
-				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>keylock</key>
-				<status>0x92</status>
-				<midino>0x1A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>beatsync</key>
-				<status>0x92</status>
-				<midino>0x58</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>cue_default</key>
-				<status>0x92</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>LoadSelectedTrack</key>
-				<status>0x96</status>
-				<midino>0x48</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>pregain</key>
-				<status>0xB2</status>
-				<midino>0x04</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>filterHigh</key>
-				<status>0xB2</status>
-				<midino>0x07</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>filterMid</key>
-				<status>0xB2</status>
-				<midino>0x0B</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>filterLow</key>
-				<status>0xB2</status>
-				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>rate</key>
-				<status>0xB2</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>volume</key>
-				<status>0xB2</status>
-				<midino>0x13</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>play</key>
-				<status>0x93</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>pfl</key>
-				<status>0x93</status>
-				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>keylock</key>
-				<status>0x93</status>
-				<midino>0x1A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>beatsync</key>
-				<status>0x93</status>
-				<midino>0x58</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>cue_default</key>
-				<status>0x93</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>LoadSelectedTrack</key>
-				<status>0x96</status>
-				<midino>0x49</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>pregain</key>
-				<status>0xB3</status>
-				<midino>0x04</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>filterHigh</key>
-				<status>0xB3</status>
-				<midino>0x07</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>filterMid</key>
-				<status>0xB3</status>
-				<midino>0x0B</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>filterLow</key>
-				<status>0xB3</status>
-				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>rate</key>
-				<status>0xB3</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>volume</key>
-				<status>0xB3</status>
-				<midino>0x13</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogScratchTouch</key>
-				<status>0x90</status>
-				<midino>0x36</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogSeekTouch</key>
-				<status>0x90</status>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x97</status>
 				<midino>0x35</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogScratchTurn</key>
-				<status>0xB0</status>
-				<midino>0x22</midino>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x30</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogPitchBend</key>
-				<status>0xB0</status>
-				<midino>0x21</midino>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x31</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogSeekTurn</key>
-				<status>0xB0</status>
-				<midino>0x23</midino>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x32</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogScratchTouch</key>
-				<status>0x91</status>
-				<midino>0x36</midino>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x33</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogSeekTouch</key>
-				<status>0x91</status>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x98</status>
 				<midino>0x35</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogScratchTurn</key>
-				<status>0xB1</status>
-				<midino>0x22</midino>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x30</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogPitchBend</key>
-				<status>0xB1</status>
-				<midino>0x21</midino>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x31</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogSeekTurn</key>
-				<status>0xB1</status>
-				<midino>0x23</midino>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x32</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogScratchTouch</key>
-				<status>0x92</status>
-				<midino>0x36</midino>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x33</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogSeekTouch</key>
-				<status>0x92</status>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x99</status>
 				<midino>0x35</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogScratchTurn</key>
-				<status>0xB2</status>
-				<midino>0x22</midino>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x30</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogPitchBend</key>
-				<status>0xB2</status>
-				<midino>0x21</midino>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x31</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogSeekTurn</key>
-				<status>0xB2</status>
-				<midino>0x23</midino>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x32</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogScratchTouch</key>
-				<status>0x93</status>
-				<midino>0x36</midino>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x33</midino>
 				<options>
-					<script-binding />
+					<normal />
 				</options>
 			</control>
 			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogSeekTouch</key>
-				<status>0x93</status>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
 				<midino>0x35</midino>
 				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogScratchTurn</key>
-				<status>0xB3</status>
-				<midino>0x22</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogPitchBend</key>
-				<status>0xB3</status>
-				<midino>0x21</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogSeekTurn</key>
-				<status>0xB3</status>
-				<midino>0x23</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x00</midino>
-				<options>
 					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x08</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x01</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x09</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x02</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x03</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x04</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x05</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0D</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x06</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0E</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x07</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0F</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x00</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x08</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x01</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x09</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x02</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x03</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x04</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x05</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0D</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x06</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0E</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x07</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0F</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x00</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x08</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x01</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x09</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x02</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x03</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x04</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x05</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0D</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x06</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0E</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x07</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0F</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x00</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x08</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x01</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x09</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x02</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x03</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x04</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x05</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0D</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x06</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0E</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x07</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0F</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x10</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x11</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x12</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x13</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x14</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x15</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x16</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x17</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x10</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x11</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x12</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x13</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x14</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x15</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x16</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x17</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x10</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x11</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x12</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x13</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x14</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x15</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x16</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x17</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x10</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x11</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x12</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x13</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x14</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x15</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x16</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x17</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Master]</group>
-				<key>crossfader</key>
-				<status>0xB6</status>
-				<midino>0x1F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Playlist]</group>
-				<key>PioneerDDJSR.RotarySelectorClick</key>
-				<status>0x96</status>
-				<midino>0x41</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Playlist]</group>
-				<key>PioneerDDJSR.RotarySelector</key>
-				<status>0xB6</status>
-				<midino>0x40</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>play</key>
-				<status>0x90</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>pfl</key>
-				<status>0x90</status>
-				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>keylock</key>
-				<status>0x90</status>
-				<midino>0x1A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>beatsync</key>
-				<status>0x90</status>
-				<midino>0x58</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>cue_default</key>
-				<status>0x90</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>LoadSelectedTrack</key>
-				<status>0x96</status>
-				<midino>0x46</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>pregain</key>
-				<status>0xB0</status>
-				<midino>0x04</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>filterHigh</key>
-				<status>0xB0</status>
-				<midino>0x07</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>filterMid</key>
-				<status>0xB0</status>
-				<midino>0x0B</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>filterLow</key>
-				<status>0xB0</status>
-				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>rate</key>
-				<status>0xB0</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>volume</key>
-				<status>0xB0</status>
-				<midino>0x13</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>play</key>
-				<status>0x91</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>pfl</key>
-				<status>0x91</status>
-				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>keylock</key>
-				<status>0x91</status>
-				<midino>0x1A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>beatsync</key>
-				<status>0x91</status>
-				<midino>0x58</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>cue_default</key>
-				<status>0x91</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>LoadSelectedTrack</key>
-				<status>0x96</status>
-				<midino>0x47</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>pregain</key>
-				<status>0xB1</status>
-				<midino>0x04</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>filterHigh</key>
-				<status>0xB1</status>
-				<midino>0x07</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>filterMid</key>
-				<status>0xB1</status>
-				<midino>0x0B</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>filterLow</key>
-				<status>0xB1</status>
-				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>rate</key>
-				<status>0xB1</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>volume</key>
-				<status>0xB1</status>
-				<midino>0x13</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>play</key>
-				<status>0x92</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>pfl</key>
-				<status>0x92</status>
-				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>keylock</key>
-				<status>0x92</status>
-				<midino>0x1A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>beatsync</key>
-				<status>0x92</status>
-				<midino>0x58</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>cue_default</key>
-				<status>0x92</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>LoadSelectedTrack</key>
-				<status>0x96</status>
-				<midino>0x48</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>pregain</key>
-				<status>0xB2</status>
-				<midino>0x04</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>filterHigh</key>
-				<status>0xB2</status>
-				<midino>0x07</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>filterMid</key>
-				<status>0xB2</status>
-				<midino>0x0B</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>filterLow</key>
-				<status>0xB2</status>
-				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>rate</key>
-				<status>0xB2</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>volume</key>
-				<status>0xB2</status>
-				<midino>0x13</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>play</key>
-				<status>0x93</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>pfl</key>
-				<status>0x93</status>
-				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>keylock</key>
-				<status>0x93</status>
-				<midino>0x1A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>beatsync</key>
-				<status>0x93</status>
-				<midino>0x58</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>cue_default</key>
-				<status>0x93</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>LoadSelectedTrack</key>
-				<status>0x96</status>
-				<midino>0x49</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>pregain</key>
-				<status>0xB3</status>
-				<midino>0x04</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>filterHigh</key>
-				<status>0xB3</status>
-				<midino>0x07</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>filterMid</key>
-				<status>0xB3</status>
-				<midino>0x0B</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>filterLow</key>
-				<status>0xB3</status>
-				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>rate</key>
-				<status>0xB3</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>volume</key>
-				<status>0xB3</status>
-				<midino>0x13</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogScratchTouch</key>
-				<status>0x90</status>
-				<midino>0x36</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogSeekTouch</key>
-				<status>0x90</status>
-				<midino>0x35</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogScratchTurn</key>
-				<status>0xB0</status>
-				<midino>0x22</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogPitchBend</key>
-				<status>0xB0</status>
-				<midino>0x21</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.jogSeekTurn</key>
-				<status>0xB0</status>
-				<midino>0x23</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogScratchTouch</key>
-				<status>0x91</status>
-				<midino>0x36</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogSeekTouch</key>
-				<status>0x91</status>
-				<midino>0x35</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogScratchTurn</key>
-				<status>0xB1</status>
-				<midino>0x22</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogPitchBend</key>
-				<status>0xB1</status>
-				<midino>0x21</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.jogSeekTurn</key>
-				<status>0xB1</status>
-				<midino>0x23</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogScratchTouch</key>
-				<status>0x92</status>
-				<midino>0x36</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogSeekTouch</key>
-				<status>0x92</status>
-				<midino>0x35</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogScratchTurn</key>
-				<status>0xB2</status>
-				<midino>0x22</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogPitchBend</key>
-				<status>0xB2</status>
-				<midino>0x21</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.jogSeekTurn</key>
-				<status>0xB2</status>
-				<midino>0x23</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogScratchTouch</key>
-				<status>0x93</status>
-				<midino>0x36</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogSeekTouch</key>
-				<status>0x93</status>
-				<midino>0x35</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogScratchTurn</key>
-				<status>0xB3</status>
-				<midino>0x22</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogPitchBend</key>
-				<status>0xB3</status>
-				<midino>0x21</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.jogSeekTurn</key>
-				<status>0xB3</status>
-				<midino>0x23</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x00</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x08</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x01</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x09</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x02</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x03</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x04</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x05</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0D</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x06</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0E</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_activate</key>
-				<status>0x97</status>
-				<midino>0x07</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>hotcue_1_clear</key>
-				<status>0x97</status>
-				<midino>0x0F</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x00</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x08</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x01</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x09</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x02</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x03</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x04</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x05</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0D</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x06</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0E</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_activate</key>
-				<status>0x98</status>
-				<midino>0x07</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>hotcue_2_clear</key>
-				<status>0x98</status>
-				<midino>0x0F</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x00</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x08</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x01</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x09</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x02</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x03</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x04</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x05</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0D</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x06</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0E</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_activate</key>
-				<status>0x99</status>
-				<midino>0x07</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>hotcue_3_clear</key>
-				<status>0x99</status>
-				<midino>0x0F</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x00</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x08</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x01</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x09</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x02</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x03</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0B</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x04</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0C</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x05</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0D</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x06</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0E</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_activate</key>
-				<status>0x9A</status>
-				<midino>0x07</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>hotcue_4_clear</key>
-				<status>0x9A</status>
-				<midino>0x0F</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x10</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x11</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x12</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x13</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x14</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x15</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x16</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x97</status>
-				<midino>0x17</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x10</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x11</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x12</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x13</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x14</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x15</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x16</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x98</status>
-				<midino>0x17</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x10</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x11</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x12</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x13</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x14</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x15</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x16</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x99</status>
-				<midino>0x17</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x10</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x11</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x12</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x13</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x14</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x15</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x16</midino>
-				<options>
-					<script-binding />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>PioneerDDJSR.RollPerformancePad</key>
-				<status>0x9A</status>
-				<midino>0x17</midino>
-				<options>
-					<script-binding />
 				</options>
 			</control>
 			<control>
@@ -6023,6 +3233,222 @@
 				</options>
 			</control>
 			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
 				<group>[Master]</group>
 				<key>crossfader</key>
 				<status>0xB6</status>
@@ -7526,6 +4952,222 @@
 				</options>
 			</control>
 			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
 				<group>[Master]</group>
 				<key>crossfader</key>
 				<status>0xB6</status>
@@ -9029,6 +6671,222 @@
 				</options>
 			</control>
 			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
 				<group>[Master]</group>
 				<key>crossfader</key>
 				<status>0xB6</status>
@@ -10529,6 +8387,3660 @@
 				<midino>0x17</midino>
 				<options>
 					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Master]</group>
+				<key>crossfader</key>
+				<status>0xB6</status>
+				<midino>0x1F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Playlist]</group>
+				<key>PioneerDDJSR.RotarySelectorClick</key>
+				<status>0x96</status>
+				<midino>0x41</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Playlist]</group>
+				<key>PioneerDDJSR.RotarySelector</key>
+				<status>0xB6</status>
+				<midino>0x40</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>play</key>
+				<status>0x90</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>pfl</key>
+				<status>0x90</status>
+				<midino>0x54</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>keylock</key>
+				<status>0x90</status>
+				<midino>0x1A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>beatsync</key>
+				<status>0x90</status>
+				<midino>0x58</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>cue_default</key>
+				<status>0x90</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>LoadSelectedTrack</key>
+				<status>0x96</status>
+				<midino>0x46</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>pregain</key>
+				<status>0xB0</status>
+				<midino>0x04</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>filterHigh</key>
+				<status>0xB0</status>
+				<midino>0x07</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>filterMid</key>
+				<status>0xB0</status>
+				<midino>0x0B</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>filterLow</key>
+				<status>0xB0</status>
+				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>rate</key>
+				<status>0xB0</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>volume</key>
+				<status>0xB0</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>play</key>
+				<status>0x91</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>pfl</key>
+				<status>0x91</status>
+				<midino>0x54</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>keylock</key>
+				<status>0x91</status>
+				<midino>0x1A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>beatsync</key>
+				<status>0x91</status>
+				<midino>0x58</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>cue_default</key>
+				<status>0x91</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>LoadSelectedTrack</key>
+				<status>0x96</status>
+				<midino>0x47</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>pregain</key>
+				<status>0xB1</status>
+				<midino>0x04</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>filterHigh</key>
+				<status>0xB1</status>
+				<midino>0x07</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>filterMid</key>
+				<status>0xB1</status>
+				<midino>0x0B</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>filterLow</key>
+				<status>0xB1</status>
+				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>rate</key>
+				<status>0xB1</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>volume</key>
+				<status>0xB1</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>play</key>
+				<status>0x92</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>pfl</key>
+				<status>0x92</status>
+				<midino>0x54</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>keylock</key>
+				<status>0x92</status>
+				<midino>0x1A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>beatsync</key>
+				<status>0x92</status>
+				<midino>0x58</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>cue_default</key>
+				<status>0x92</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>LoadSelectedTrack</key>
+				<status>0x96</status>
+				<midino>0x48</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>pregain</key>
+				<status>0xB2</status>
+				<midino>0x04</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>filterHigh</key>
+				<status>0xB2</status>
+				<midino>0x07</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>filterMid</key>
+				<status>0xB2</status>
+				<midino>0x0B</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>filterLow</key>
+				<status>0xB2</status>
+				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>rate</key>
+				<status>0xB2</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>volume</key>
+				<status>0xB2</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>play</key>
+				<status>0x93</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>pfl</key>
+				<status>0x93</status>
+				<midino>0x54</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>keylock</key>
+				<status>0x93</status>
+				<midino>0x1A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>beatsync</key>
+				<status>0x93</status>
+				<midino>0x58</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>cue_default</key>
+				<status>0x93</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>LoadSelectedTrack</key>
+				<status>0x96</status>
+				<midino>0x49</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>pregain</key>
+				<status>0xB3</status>
+				<midino>0x04</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>filterHigh</key>
+				<status>0xB3</status>
+				<midino>0x07</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>filterMid</key>
+				<status>0xB3</status>
+				<midino>0x0B</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>filterLow</key>
+				<status>0xB3</status>
+				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>rate</key>
+				<status>0xB3</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>volume</key>
+				<status>0xB3</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogScratchTouch</key>
+				<status>0x90</status>
+				<midino>0x36</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogSeekTouch</key>
+				<status>0x90</status>
+				<midino>0x35</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogScratchTurn</key>
+				<status>0xB0</status>
+				<midino>0x22</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogPitchBend</key>
+				<status>0xB0</status>
+				<midino>0x21</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogSeekTurn</key>
+				<status>0xB0</status>
+				<midino>0x23</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogScratchTouch</key>
+				<status>0x91</status>
+				<midino>0x36</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogSeekTouch</key>
+				<status>0x91</status>
+				<midino>0x35</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogScratchTurn</key>
+				<status>0xB1</status>
+				<midino>0x22</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogPitchBend</key>
+				<status>0xB1</status>
+				<midino>0x21</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogSeekTurn</key>
+				<status>0xB1</status>
+				<midino>0x23</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogScratchTouch</key>
+				<status>0x92</status>
+				<midino>0x36</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogSeekTouch</key>
+				<status>0x92</status>
+				<midino>0x35</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogScratchTurn</key>
+				<status>0xB2</status>
+				<midino>0x22</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogPitchBend</key>
+				<status>0xB2</status>
+				<midino>0x21</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogSeekTurn</key>
+				<status>0xB2</status>
+				<midino>0x23</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogScratchTouch</key>
+				<status>0x93</status>
+				<midino>0x36</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogSeekTouch</key>
+				<status>0x93</status>
+				<midino>0x35</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogScratchTurn</key>
+				<status>0xB3</status>
+				<midino>0x22</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogPitchBend</key>
+				<status>0xB3</status>
+				<midino>0x21</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogSeekTurn</key>
+				<status>0xB3</status>
+				<midino>0x23</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x00</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x08</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x01</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x09</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x03</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x05</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0D</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x06</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0E</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x07</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0F</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x00</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x08</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x01</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x09</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x03</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x05</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0D</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x06</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0E</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x07</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0F</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x00</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x08</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x01</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x09</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x03</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x05</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0D</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x06</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0E</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x07</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0F</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x00</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x08</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x01</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x09</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x03</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x05</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0D</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x06</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0E</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x07</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0F</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x10</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x11</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x12</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x13</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x14</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x15</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x16</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x10</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x11</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x12</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x13</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x14</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x15</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x16</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x10</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x11</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x12</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x13</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x14</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x15</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x16</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x10</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x11</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x12</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x13</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x14</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x15</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x16</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Master]</group>
+				<key>crossfader</key>
+				<status>0xB6</status>
+				<midino>0x1F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Playlist]</group>
+				<key>PioneerDDJSR.RotarySelectorClick</key>
+				<status>0x96</status>
+				<midino>0x41</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Playlist]</group>
+				<key>PioneerDDJSR.RotarySelector</key>
+				<status>0xB6</status>
+				<midino>0x40</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>play</key>
+				<status>0x90</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>pfl</key>
+				<status>0x90</status>
+				<midino>0x54</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>keylock</key>
+				<status>0x90</status>
+				<midino>0x1A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>beatsync</key>
+				<status>0x90</status>
+				<midino>0x58</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>cue_default</key>
+				<status>0x90</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>LoadSelectedTrack</key>
+				<status>0x96</status>
+				<midino>0x46</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>pregain</key>
+				<status>0xB0</status>
+				<midino>0x04</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>filterHigh</key>
+				<status>0xB0</status>
+				<midino>0x07</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>filterMid</key>
+				<status>0xB0</status>
+				<midino>0x0B</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>filterLow</key>
+				<status>0xB0</status>
+				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>rate</key>
+				<status>0xB0</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>volume</key>
+				<status>0xB0</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>play</key>
+				<status>0x91</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>pfl</key>
+				<status>0x91</status>
+				<midino>0x54</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>keylock</key>
+				<status>0x91</status>
+				<midino>0x1A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>beatsync</key>
+				<status>0x91</status>
+				<midino>0x58</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>cue_default</key>
+				<status>0x91</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>LoadSelectedTrack</key>
+				<status>0x96</status>
+				<midino>0x47</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>pregain</key>
+				<status>0xB1</status>
+				<midino>0x04</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>filterHigh</key>
+				<status>0xB1</status>
+				<midino>0x07</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>filterMid</key>
+				<status>0xB1</status>
+				<midino>0x0B</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>filterLow</key>
+				<status>0xB1</status>
+				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>rate</key>
+				<status>0xB1</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>volume</key>
+				<status>0xB1</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>play</key>
+				<status>0x92</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>pfl</key>
+				<status>0x92</status>
+				<midino>0x54</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>keylock</key>
+				<status>0x92</status>
+				<midino>0x1A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>beatsync</key>
+				<status>0x92</status>
+				<midino>0x58</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>cue_default</key>
+				<status>0x92</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>LoadSelectedTrack</key>
+				<status>0x96</status>
+				<midino>0x48</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>pregain</key>
+				<status>0xB2</status>
+				<midino>0x04</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>filterHigh</key>
+				<status>0xB2</status>
+				<midino>0x07</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>filterMid</key>
+				<status>0xB2</status>
+				<midino>0x0B</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>filterLow</key>
+				<status>0xB2</status>
+				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>rate</key>
+				<status>0xB2</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>volume</key>
+				<status>0xB2</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>play</key>
+				<status>0x93</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>pfl</key>
+				<status>0x93</status>
+				<midino>0x54</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>keylock</key>
+				<status>0x93</status>
+				<midino>0x1A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>beatsync</key>
+				<status>0x93</status>
+				<midino>0x58</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>cue_default</key>
+				<status>0x93</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>LoadSelectedTrack</key>
+				<status>0x96</status>
+				<midino>0x49</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>pregain</key>
+				<status>0xB3</status>
+				<midino>0x04</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>filterHigh</key>
+				<status>0xB3</status>
+				<midino>0x07</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>filterMid</key>
+				<status>0xB3</status>
+				<midino>0x0B</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>filterLow</key>
+				<status>0xB3</status>
+				<midino>0x0F</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>rate</key>
+				<status>0xB3</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>volume</key>
+				<status>0xB3</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogScratchTouch</key>
+				<status>0x90</status>
+				<midino>0x36</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogSeekTouch</key>
+				<status>0x90</status>
+				<midino>0x35</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogScratchTurn</key>
+				<status>0xB0</status>
+				<midino>0x22</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogPitchBend</key>
+				<status>0xB0</status>
+				<midino>0x21</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.jogSeekTurn</key>
+				<status>0xB0</status>
+				<midino>0x23</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogScratchTouch</key>
+				<status>0x91</status>
+				<midino>0x36</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogSeekTouch</key>
+				<status>0x91</status>
+				<midino>0x35</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogScratchTurn</key>
+				<status>0xB1</status>
+				<midino>0x22</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogPitchBend</key>
+				<status>0xB1</status>
+				<midino>0x21</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.jogSeekTurn</key>
+				<status>0xB1</status>
+				<midino>0x23</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogScratchTouch</key>
+				<status>0x92</status>
+				<midino>0x36</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogSeekTouch</key>
+				<status>0x92</status>
+				<midino>0x35</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogScratchTurn</key>
+				<status>0xB2</status>
+				<midino>0x22</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogPitchBend</key>
+				<status>0xB2</status>
+				<midino>0x21</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.jogSeekTurn</key>
+				<status>0xB2</status>
+				<midino>0x23</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogScratchTouch</key>
+				<status>0x93</status>
+				<midino>0x36</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogSeekTouch</key>
+				<status>0x93</status>
+				<midino>0x35</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogScratchTurn</key>
+				<status>0xB3</status>
+				<midino>0x22</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogPitchBend</key>
+				<status>0xB3</status>
+				<midino>0x21</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.jogSeekTurn</key>
+				<status>0xB3</status>
+				<midino>0x23</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x00</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x08</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x01</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x09</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x03</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x05</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0D</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x06</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0E</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_activate</key>
+				<status>0x97</status>
+				<midino>0x07</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>hotcue_1_clear</key>
+				<status>0x97</status>
+				<midino>0x0F</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x00</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x08</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x01</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x09</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x03</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x05</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0D</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x06</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0E</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_activate</key>
+				<status>0x98</status>
+				<midino>0x07</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>hotcue_2_clear</key>
+				<status>0x98</status>
+				<midino>0x0F</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x00</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x08</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x01</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x09</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x03</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x05</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0D</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x06</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0E</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_activate</key>
+				<status>0x99</status>
+				<midino>0x07</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>hotcue_3_clear</key>
+				<status>0x99</status>
+				<midino>0x0F</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x00</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x08</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x01</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x09</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0A</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x03</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0B</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0C</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x05</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0D</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x06</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0E</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_activate</key>
+				<status>0x9A</status>
+				<midino>0x07</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>hotcue_4_clear</key>
+				<status>0x9A</status>
+				<midino>0x0F</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x10</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x11</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x12</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x13</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x14</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x15</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x16</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x97</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x10</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x11</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x12</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x13</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x14</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x15</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x16</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x98</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x10</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x11</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x12</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x13</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x14</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x15</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x16</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x99</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x10</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x11</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x12</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x13</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x14</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x15</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x16</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.RollPerformancePad</key>
+				<status>0x9A</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x97</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x98</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x99</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler1]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x30</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler2]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x31</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler3]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x32</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler4]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x33</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler5]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x34</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Sampler6]</group>
+				<key>start_play</key>
+				<status>0x9A</status>
+				<midino>0x35</midino>
+				<options>
+					<normal />
 				</options>
 			</control>
 		</controls>

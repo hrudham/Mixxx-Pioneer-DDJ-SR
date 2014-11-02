@@ -43,14 +43,18 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 	- Performance Pads
 		- Hot Cues
 		- Rolls
+		- Sampler (without LEDs however)
 - Jog Wheels
     - Scratching
 	- Pitch Bending
 
 ## What's missing?
 
-- Button LEDs in most places
-- Most of the Performance Pads
+- Some button LEDs
+- Performance Pads:
+	- PAD Plus functions
+	- Slicer
+	- Sampler LEDs (but sampler itself works)
 - Filter
 - Effects
 - Slip
