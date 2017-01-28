@@ -18,7 +18,7 @@ controlManager.getHexString = function(number)
 	Usage examples:
 		manager.add('group', 'key', '0x00', '0x00');											// Square brackets around group names are optional.
 		manager.add('[group]', 'key', '0x00', '0x00');											// 'normal' options are detected.
-		manager.add('[group]', 'prefix.function', 0x96, 0x41); 									// 'script-bindings' are  detected.
+		manager.add('[group]', 'prefix.function', 0x00, 0x00); 									// 'script-bindings' are  detected.
 		manager.add('group', 'key', '0x00', '0x00', 'soft-takeover');							// specify a single option, 'soft-takeover' in this case.
 		manager.add('group', 'key', '0x00', '0x00', [ 'soft-takeover', 'another-option' ]); 	// specify multiple options
 */

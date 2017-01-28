@@ -2,7 +2,9 @@
 
 ## Description 
 
-This is my attempt at mapping the [Pioneer DDJ-SR](http://pioneerdj.com/english/products/controller/ddj-sr.html) for [Mixxx](http://www.mixxx.org/). I wrote this specifically with Mixxx v1.11.0 in mind.
+This is my attempt at mapping the [Pioneer DDJ-SR](http://pioneerdj.com/english/products/controller/ddj-sr.html) for [Mixxx](http://www.mixxx.org/). 
+
+This was originally written for Mixxx v1.11.0, but I'm in the process of updating it to Mixxx 2.0 as of January 2017. This is very much a hobby project though, so updates may be intermittent.
 
 ## How do I use it?
 
@@ -18,7 +20,7 @@ If you just want to get your controller working with with Mixxx without botherin
 3. Make sure your Pioneer DDJ-SR is plugged in, turned on, and set up to use DJ software other than Serato (see your user manual, or the `Controller Setup` section below)
 4. Open (or restart) Mixxx, and enjoy using your (semi-functional) controller
 
-### Controller Setup
+### Controller Setup (important!)
 
 By default, your Pioneer DDJ-SR will be in "Serato-mode". This means that some functionality quite simply won't work in Mix until you turn it off (for example, keylock for the pitch controls). To change this, do the following.
 

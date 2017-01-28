@@ -6,10 +6,10 @@ PioneerDDJSR.init = function(id)
 	
 	PioneerDDJSR.channels = 
 		{	
-			0x00: {},
-			0x01: {},
-			0x02: {},
-			0x03: {}
+			'[Channel1]': {},
+			'[Channel2]': {},
+			'[Channel3]': {},
+			'[Channel4]': {}
 		};
 	
 	PioneerDDJSR.settings = 
@@ -227,44 +227,35 @@ PioneerDDJSR.pitchBend = function(group, movement)
 // Instead, we set up a time that disables it, but cancel and
 // re-register that timer whenever we need to to postpone the disable.
 // Very much a hack, but it works, and I'm yet to find a better solution.
-PioneerDDJSR.scheduleDisableScratch = function(channel)
+PioneerDDJSR.scheduleDisableScratch = function(channel, group)
 {
-	PioneerDDJSR.channels[channel].disableScratchTimer = engine.beginTimer(
+	PioneerDDJSR.channels[group].disableScratchTimer = engine.beginTimer(
 		PioneerDDJSR.settings.safeScratchTimeout, 
 		'PioneerDDJSR.toggleScratch(' + channel + ', false)', 
 		true);
 };
 
 // If scratch-disabling has been schedule, then unschedule it.
-PioneerDDJSR.unscheduleDisableScratch = function(channel)
+PioneerDDJSR.unscheduleDisableScratch = function(group)
 {
-	if (PioneerDDJSR.channels[channel].disableScratchTimer)
+	if (PioneerDDJSR.channels[group].disableScratchTimer)
 	{
-		engine.stopTimer(PioneerDDJSR.channels[channel].disableScratchTimer);
+		engine.stopTimer(PioneerDDJSR.channels[group].disableScratchTimer);
 	}
-};
-
-// Postpone scratch disabling by a few milliseconds. This is
-// useful if you were scratching, but let of of the jog wheel.
-// Without this, you'd end up with a pitch-bend in that case.
-PioneerDDJSR.postponeDisableScratch = function(channel)
-{
-	PioneerDDJSR.unscheduleDisableScratch(channel);
-	PioneerDDJSR.scheduleDisableScratch(channel);
 };
 
 // Detect when the user touches and releases the jog-wheel while 
 // jog-mode is set to vinyl to enable and disable scratching.
-PioneerDDJSR.jogScratchTouch = function(channel, control, value, status) 
+PioneerDDJSR.jogScratchTouch = function(channel, control, value, status, group) 
 {
 	if (value == 0x7F)
 	{
-		PioneerDDJSR.unscheduleDisableScratch(channel);	
+		PioneerDDJSR.unscheduleDisableScratch(group);	
 		PioneerDDJSR.toggleScratch(channel, true);
 	}
 	else
 	{
-		PioneerDDJSR.scheduleDisableScratch(channel);
+		PioneerDDJSR.scheduleDisableScratch(channel, group);
 	}
 };
  
@@ -290,7 +281,8 @@ PioneerDDJSR.jogPitchBend = function(channel, control, value, status, group)
 	if (engine.isScratching(deck))
 	{
 		engine.scratchTick(deck, PioneerDDJSR.getJogWheelDelta(value));
-		PioneerDDJSR.postponeDisableScratch(channel);
+		PioneerDDJSR.unscheduleDisableScratch(group);
+		PioneerDDJSR.scheduleDisableScratch(channel, group);
 	}
 	else
 	{	

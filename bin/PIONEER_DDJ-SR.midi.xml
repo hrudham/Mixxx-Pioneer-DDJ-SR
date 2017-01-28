@@ -146,6 +146,33 @@
 				</options>
 			</control>
 			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.LpfHpfToggle</key>
+				<status>0x96</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.filterKnobLSB</key>
+				<status>0xB6</status>
+				<midino>0x17</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.filterKnobMSB</key>
+				<status>0xB6</status>
+				<midino>0x37</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
 				<group>[Channel2]</group>
 				<key>play</key>
 				<status>0x91</status>
@@ -251,6 +278,33 @@
 				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.LpfHpfToggle</key>
+				<status>0x96</status>
+				<midino>0x18</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.filterKnobLSB</key>
+				<status>0xB6</status>
+				<midino>0x18</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.filterKnobMSB</key>
+				<status>0xB6</status>
+				<midino>0x38</midino>
+				<options>
+					<script-binding />
 				</options>
 			</control>
 			<control>
@@ -362,6 +416,33 @@
 				</options>
 			</control>
 			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.LpfHpfToggle</key>
+				<status>0x96</status>
+				<midino>0x19</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.filterKnobLSB</key>
+				<status>0xB6</status>
+				<midino>0x19</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.filterKnobMSB</key>
+				<status>0xB6</status>
+				<midino>0x39</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
 				<group>[Channel4]</group>
 				<key>play</key>
 				<status>0x93</status>
@@ -467,6 +548,33 @@
 				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.LpfHpfToggle</key>
+				<status>0x96</status>
+				<midino>0x1A</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.filterKnobLSB</key>
+				<status>0xB6</status>
+				<midino>0x1A</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.filterKnobMSB</key>
+				<status>0xB6</status>
+				<midino>0x3A</midino>
+				<options>
+					<script-binding />
 				</options>
 			</control>
 			<control>
