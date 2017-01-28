@@ -80,9 +80,9 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding)
 		}
 		
 		// Hook up the roll performance pads
-		for (var interval in PioneerDDJSR.settings.loopIntervals)
+		for (var i = 0; i < PioneerDDJSR.settings.loopIntervals.length; i++)
 		{
-			engine.connectControl(channelGroup, 'beatloop_' + interval + '_enabled', 'PioneerDDJSR.RollPerformancePadLed', isUnbinding);
+			engine.connectControl(channelGroup, 'beatloop_' + PioneerDDJSR.settings.loopIntervals[i] + '_enabled', 'PioneerDDJSR.RollPerformancePadLed', isUnbinding);
 		}
 	}
 };
