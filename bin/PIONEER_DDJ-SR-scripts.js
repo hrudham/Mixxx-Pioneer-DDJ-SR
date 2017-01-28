@@ -16,7 +16,7 @@ PioneerDDJSR.init = function(id)
 		{
 			alpha: alpha,
 			beta: alpha / 32,
-			jogResolution: 720,
+			jogResolution: 900,
 			vinylSpeed: 33 + 1/3,
 			loopIntervals: ['0.03125', '0.0625', '0.125', '0.25', '0.5', '1', '2', '4', '8', '16', '32', '64'],
 			safeScratchTimeout: 20 // 20ms is the minimum allowed here.
@@ -187,7 +187,7 @@ PioneerDDJSR.vuMeter = function(value, group, control)
 PioneerDDJSR.getJogWheelDelta = function(value)
 {
 	// The Wheel control centers on 0x40; find out how much it's moved by.
-	return value - 0x40;
+	return (value - 0x40);
 }
 
 // Toggle scratching for a channel
@@ -210,11 +210,8 @@ PioneerDDJSR.toggleScratch = function(channel, isEnabled)
 };
 
 // Pitch bend a channel
-PioneerDDJSR.pitchBend = function(channel, movement) 
-{
-	var deck = channel + 1; 
-	var group = '[Channel' + deck +']';
-	
+PioneerDDJSR.pitchBend = function(group, movement) 
+{	
 	// Make this a little less sensitive.
 	movement = movement / 5; 
 	
@@ -286,10 +283,9 @@ PioneerDDJSR.jogScratchTurn = function(channel, control, value, status)
 
 // Pitch bend using the jog-wheel, or finish a scratch when the wheel 
 // is still turning after having released it.
-PioneerDDJSR.jogPitchBend = function(channel, control, value, status) 
+PioneerDDJSR.jogPitchBend = function(channel, control, value, status, group) 
 {
 	var deck = channel + 1; 
-	var group = '[Channel' + deck +']';
 
 	if (engine.isScratching(deck))
 	{
@@ -301,17 +297,14 @@ PioneerDDJSR.jogPitchBend = function(channel, control, value, status)
 		// Only pitch-bend when actually playing
 		if (engine.getValue(group, 'play'))
 		{
-			PioneerDDJSR.pitchBend(channel, PioneerDDJSR.getJogWheelDelta(value));
+			PioneerDDJSR.pitchBend(group, PioneerDDJSR.getJogWheelDelta(value));
 		}
 	}
 };
 
 // Called when the jog-mode is not set to vinyl, and the jog wheel is touched.
-PioneerDDJSR.jogSeekTouch = function(channel, control, value, status) 
-{
-	var deck = channel + 1; 
-	var group = '[Channel' + deck +']';
-	
+PioneerDDJSR.jogSeekTouch = function(channel, control, value, status, group) 
+{	
 	// Only enable scratching if we're in scratching mode, when user is  
 	// touching the top of the jog-wheel and the 'Vinyl' jog mode is 
 	// selected.
@@ -326,7 +319,7 @@ PioneerDDJSR.jogSeekTouch = function(channel, control, value, status)
 // Call when the jog-wheel is turned. The related jogSeekTouch function 
 // sets up whether we will be scratching or pitch-bending depending 
 // on whether a song is playing or not.
-PioneerDDJSR.jogSeekTurn = function(channel, control, value, status) 
+PioneerDDJSR.jogSeekTurn = function(channel, control, value, status, group) 
 {
 	var deck = channel + 1; 
 	
@@ -336,16 +329,14 @@ PioneerDDJSR.jogSeekTurn = function(channel, control, value, status)
 	}
 	else
 	{
-		PioneerDDJSR.pitchBend(channel, PioneerDDJSR.getJogWheelDelta(value));
+		PioneerDDJSR.pitchBend(group, PioneerDDJSR.getJogWheelDelta(value));
 	}
 };
 
 // This handles the eight performance pads below the jog-wheels 
 // that deal with rolls or beat loops.
-PioneerDDJSR.RollPerformancePad = function(performanceChannel, control, value, status) 
+PioneerDDJSR.RollPerformancePad = function(performanceChannel, control, value, status, group) 
 {
-	var deck = performanceChannel - 6;  
-	var group = '[Channel' + deck +']';
 	var interval = PioneerDDJSR.settings.loopIntervals[control - 0x10 + 2];
 	
 	if (value == 0x7F)
@@ -357,7 +348,7 @@ PioneerDDJSR.RollPerformancePad = function(performanceChannel, control, value, s
 		engine.setValue(group, 'beatlooproll_' + interval + '_activate', 0);
 	}
 	
-	midi.sendShortMsg(0x97 + deck - 1, control, value);
+	midi.sendShortMsg(0x97 + performanceChannel - 7, control, value);
 };
 
 // Handles the rotary selector for choosing tracks, library items, crates, etc.
@@ -376,18 +367,10 @@ PioneerDDJSR.RotarySelector = function(channel, control, value, status)
 	switch(PioneerDDJSR.status.rotarySelector.target)
 	{
 		case tracklist:
-			engine.setValue('[Playlist]', 'SelectTrackKnob', delta);
+			engine.setValue('[Playlist]', delta > 0 ? 'SelectNextTrack' : 'SelectPrevTrack', 1);		
 			break;
 		case libraries:
-			if (delta > 0)
-			{
-				engine.setValue('[Playlist]', 'SelectNextPlaylist', 1);
-			}
-			else if (delta < 0)
-			{
-				engine.setValue('[Playlist]', 'SelectPrevPlaylist', 1);
-			}
-			
+			engine.setValue('[Playlist]', delta > 0 ? 'SelectNextPlaylist' : 'SelectPrevPlaylist', 1);			
 			break;
 	}
 };
@@ -427,4 +410,3 @@ PioneerDDJSR.shutdown = function()
 	PioneerDDJSR.vuMeter(0, '[Channel3]', 'VuMeter');
 	PioneerDDJSR.vuMeter(0, '[Channel4]', 'VuMeter');
 };
-

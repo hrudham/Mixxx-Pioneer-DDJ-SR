@@ -26,17 +26,13 @@ gulp.task(
 	
 		return gulp
 			.src('source/mappings/midi-mapping.xml')
-			.pipe(
-				ejs({ 
-					settings: settings,
-					controls: playlist
-						.concat(mixer)
-						.concat(channel)
-						.concat(jogWheel)
-						.concat(hotCue)
-						.concat(roll)
-						.concat(sampler)
-					}))
+			.pipe(ejs({ settings: settings, controls: playlist }))
+			.pipe(ejs({ settings: settings, controls: mixer }))
+			.pipe(ejs({ settings: settings, controls: channel }))
+			.pipe(ejs({ settings: settings, controls: jogWheel }))
+			.pipe(ejs({ settings: settings, controls: hotCue }))
+			.pipe(ejs({ settings: settings, controls: roll }))
+			.pipe(ejs({ settings: settings, controls: sampler }))
 			.pipe(rename(settings.filePrefix + '.midi.xml'))
 			.pipe(gulp.dest('bin'));
 	});
