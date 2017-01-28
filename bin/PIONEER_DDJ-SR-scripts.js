@@ -391,6 +391,22 @@ PioneerDDJSR.RotarySelectorClick = function(channel, control, value, status)
 	}
 };
 
+PioneerDDJSR.LpfHpfToggle = function(channel, control, value, status, group) 
+{
+	engine.setValue('[QuickEffectRack1_' + group + '_Effect1]', 'enabled', value == 0x7F);
+};
+
+PioneerDDJSR.filterKnobLSB = function(channel, control, value, status, group) 
+{
+	PioneerDDJSR.channels[group].filterKnob = value;
+}
+
+PioneerDDJSR.filterKnobMSB = function(channel, control, value, status, group) 
+{
+	var fullValue = (PioneerDDJSR.channels[group].filterKnob << 7) + value;
+	engine.setValue('[QuickEffectRack1_' + group + ']', 'super1', fullValue / 0x3FFF);
+};
+
 PioneerDDJSR.shutdown = function()
 {
 	PioneerDDJSR.BindControlConnections(true);

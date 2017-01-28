@@ -39,7 +39,11 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 - Deck Controls
     - Volume
     - Play / pause
-	- High, mid and low EQ dials
+	- EQ
+        - Highs
+        - Mids
+        - Lows
+        - LPF / HPF Filter
 	- Cue button
 	- Sync button (although this works differently than in Serato; still to be fixed)
 	- Performance Pads
@@ -57,10 +61,8 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 	- PAD Plus functions
 	- Slicer
 	- Sampler LEDs (but sampler itself works)
-- Filter
 - Effects
 - Slip
-- A whole lot more stuff. Be patient; I am working on these :-)
 - Decks 3 and 4
 
 ## I want to help. How do I build this?

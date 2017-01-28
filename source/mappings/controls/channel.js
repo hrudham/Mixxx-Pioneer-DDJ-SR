@@ -20,11 +20,9 @@ for (var channelIndex = 0; channelIndex < 4; channelIndex++)
 
 	// Filters are always on channel 7 for some reason.
 	
-	manager.add(group, 'PioneerDDJSR.LpfHpfToggle', 0x96, 0x17 + channelIndex);
-
+	manager.add(group, 'PioneerDDJSR.LpfHpfToggle', 0x96, 0x74 + channelIndex);
 	manager.add(group, 'PioneerDDJSR.filterKnobLSB', 0xB6, 0x17 + channelIndex);
 	manager.add(group, 'PioneerDDJSR.filterKnobMSB', 0xB6, 0x37 + channelIndex);
-	//manager.add('Channel7', 'PioneerDDJSR.LpfHpf', 0xB6, 0x17 + channelIndex, 'soft-takeover');
 }
 
 module.exports = manager.controls;
