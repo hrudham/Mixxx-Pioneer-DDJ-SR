@@ -1,8 +1,7 @@
 var manager = require('./../../../control-manager.js');
 
 // Generate mappings for four channels.
-for (var channelIndex = 0; channelIndex < 4; channelIndex++)
-{
+for (var channelIndex = 0; channelIndex < 4; channelIndex++) {
 	var group = 'Channel' + (channelIndex + 1);
 
 	manager.add(group, 'PioneerDDJSR.jogScratchTouch', 0x90 + channelIndex, 0x36);
