@@ -11,15 +11,6 @@
         </scriptfiles>
 		<controls>
 			<control>
-				<group>[Master]</group>
-				<key>crossfader</key>
-				<status>0xB6</status>
-				<midino>0x1F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
 				<group>[Playlist]</group>
 				<key>PioneerDDJSR.RotarySelectorClick</key>
 				<status>0x96</status>
@@ -35,6 +26,15 @@
 				<midino>0x40</midino>
 				<options>
 					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Master]</group>
+				<key>crossfader</key>
+				<status>0xB6</status>
+				<midino>0x1F</midino>
+				<options>
+					<soft-takeover />
 				</options>
 			</control>
 			<control>
@@ -102,6 +102,24 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
+				<key>rate</key>
+				<status>0xB0</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>volume</key>
+				<status>0xB0</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
 				<key>filterHigh</key>
 				<status>0xB0</status>
 				<midino>0x07</midino>
@@ -123,24 +141,6 @@
 				<key>filterLow</key>
 				<status>0xB0</status>
 				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>rate</key>
-				<status>0xB0</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
-				<key>volume</key>
-				<status>0xB0</status>
-				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
 				</options>
@@ -237,6 +237,24 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
+				<key>rate</key>
+				<status>0xB1</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>volume</key>
+				<status>0xB1</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
 				<key>filterHigh</key>
 				<status>0xB1</status>
 				<midino>0x07</midino>
@@ -258,24 +276,6 @@
 				<key>filterLow</key>
 				<status>0xB1</status>
 				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>rate</key>
-				<status>0xB1</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>volume</key>
-				<status>0xB1</status>
-				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
 				</options>
@@ -372,6 +372,24 @@
 			</control>
 			<control>
 				<group>[Channel3]</group>
+				<key>rate</key>
+				<status>0xB2</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>volume</key>
+				<status>0xB2</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
 				<key>filterHigh</key>
 				<status>0xB2</status>
 				<midino>0x07</midino>
@@ -393,24 +411,6 @@
 				<key>filterLow</key>
 				<status>0xB2</status>
 				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>rate</key>
-				<status>0xB2</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>volume</key>
-				<status>0xB2</status>
-				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
 				</options>
@@ -507,6 +507,24 @@
 			</control>
 			<control>
 				<group>[Channel4]</group>
+				<key>rate</key>
+				<status>0xB3</status>
+				<midino>0x00</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>volume</key>
+				<status>0xB3</status>
+				<midino>0x13</midino>
+				<options>
+					<soft-takeover />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
 				<key>filterHigh</key>
 				<status>0xB3</status>
 				<midino>0x07</midino>
@@ -528,24 +546,6 @@
 				<key>filterLow</key>
 				<status>0xB3</status>
 				<midino>0x0F</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>rate</key>
-				<status>0xB3</status>
-				<midino>0x00</midino>
-				<options>
-					<soft-takeover />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>volume</key>
-				<status>0xB3</status>
-				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
 				</options>

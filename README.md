@@ -63,9 +63,8 @@ To use the controller with Serato again, repeat this process and turn the keyloc
 	- Sampler LEDs (but sampler itself works)
 - Effects
 - Slip
-- Decks 3 and 4
 
-## I want to help. How do I build this?
+## I'm a developer. How do I build this?
 
 In order to make things a bit easier to understand and modularised, I've written a basic build process for this mapping. This allows me to do things like define all the midi-mappings in JavaScript, and then let Node build up the final XML file that Mixxx understands. In order to do this, you'll need to do the following:
 
@@ -73,9 +72,18 @@ In order to make things a bit easier to understand and modularised, I've written
 2. Get all of the node dependencies for this project: 
     1. Open a console, command prompt or powershell.
     2. Navigate go to the project folder.
-    3. Enter ```npm install```
+    3. Enter `npm install`
 3. Build the project
     1. Open a console, command prompt or powershell.
     2. Navigate go to the project folder.
-    3. Enter ```gulp```
+    3. Enter `npm run build`
 
+The final results of this will be placed in your `bin` directory. They will also be copied to your `process.env.LOCALAPPDATA + '/Mixxx/controllers'` folder, so Mixxx should detect them immidiately as well.
+
+You can also optionally run `npm run watch`, which will rebuild the project any time you edit a JavaScript file in the `source` folder.
+
+## Development Tips
+
+1. Run Mixxx from a terminal with the `--controllerDebug --developer` arguments. This gives you all debug output there from your controller, and also provides you with additional development information on all of Mixxx's controls in their tooltips.
+2. Mixxx does not recognise `console.log(...)`, but you can use `script.debugMidi(channel, control, value, status, group)` to achieve something similar. Most methods have the same argument signature anyway. This will output information into the terminal mentioned previously.
+3. You do not necessarily have to restart Mixxx for it to detect changes, but it sometimes helps ;-)
