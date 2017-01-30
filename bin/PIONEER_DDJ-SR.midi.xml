@@ -1837,6 +1837,42 @@
 					<normal />
 				</options>
 			</control>
+			<control>
+				<group>[EffectRack1_EffectUnit1]</group>
+				<key>PioneerDDJSR.FxSelect</key>
+				<status>0x94</status>
+				<midino>0x47</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[EffectRack1_EffectUnit2]</group>
+				<key>PioneerDDJSR.FxSelect</key>
+				<status>0x94</status>
+				<midino>0x48</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[EffectRack1_EffectUnit3]</group>
+				<key>PioneerDDJSR.FxSelect</key>
+				<status>0x95</status>
+				<midino>0x47</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[EffectRack1_EffectUnit4]</group>
+				<key>PioneerDDJSR.FxSelect</key>
+				<status>0x95</status>
+				<midino>0x48</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
 		</controls>
         <outputs />
     </controller>

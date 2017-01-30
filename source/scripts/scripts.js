@@ -7,7 +7,7 @@ PioneerDDJSR.init = function(id) {
 		'[Channel1]': { index: 0x00 },
 		'[Channel2]': { index: 0x01 },
 		'[Channel3]': { index: 0x02 },
-		'[Channel4]': { index: 0x03 }
+		'[Channel4]': { index: 0x03 },
 	};
 	
 	PioneerDDJSR.settings = {
@@ -16,21 +16,28 @@ PioneerDDJSR.init = function(id) {
 		jogResolution: 900,
 		vinylSpeed: 33 + 1/3,
 		loopIntervals: ['0.03125', '0.0625', '0.125', '0.25', '0.5', '1', '2', '4', '8', '16', '32', '64'],
-		safeScratchTimeout: 20 // 20ms is the minimum allowed here.
+		safeScratchTimeout: 20, // 20ms is the minimum allowed here.
 	};
+
+	PioneerDDJSR.effects = {
+		'[EffectRack1_EffectUnit1]': { bank: 0, index: 0 },
+		'[EffectRack1_EffectUnit2]': { bank: 0, index: 1 },
+		'[EffectRack1_EffectUnit3]': { bank: 1, index: 0 },
+		'[EffectRack1_EffectUnit4]': { bank: 1, index: 1 },	
+	}
 		
 	PioneerDDJSR.enumerations = {
 		rotarySelector:	{
 			targets: {
 					libraries: 0,
-					tracklist: 1
+					tracklist: 1,
 			}
 		},
 	};
 		
 	PioneerDDJSR.status = {
 		rotarySelector: {
-			target: PioneerDDJSR.enumerations.rotarySelector.targets.tracklist
+			target: PioneerDDJSR.enumerations.rotarySelector.targets.tracklist,
 		}
 	};
 				
@@ -56,16 +63,29 @@ PioneerDDJSR.BindControlConnections = function(isUnbinding) {
 		// Keylock LED
 		engine.connectControl(group, 'keylock', 'PioneerDDJSR.KeyLockLeds', isUnbinding);
 		
-		// Hook up the hot cue performance pads
+		// Hook up the hot cue performance pad LEDs
 		for (var i = 0; i < 8; i++) {
 			engine.connectControl(group, 'hotcue_' + (i + 1) +'_enabled', 'PioneerDDJSR.HotCuePerformancePadLed', isUnbinding);
 		}
 		
-		// Hook up the roll performance pads
+		// Hook up the roll performance pad LEDs
 		for (var i = 0; i < PioneerDDJSR.settings.loopIntervals.length; i++) {
 			engine.connectControl(group, 'beatloop_' + PioneerDDJSR.settings.loopIntervals[i] + '_enabled', 'PioneerDDJSR.RollPerformancePadLed', isUnbinding);
 		}
 	}
+
+	// Effects LEDs
+	for (var i = 0; i < 4; i++) {
+		engine.connectControl('[EffectRack1_EffectUnit' + (i + 1) + ']', 'enabled', 'PioneerDDJSR.EffectLed', isUnbinding);
+	}
+};
+
+// This handles the effect on / off buttons
+PioneerDDJSR.EffectLed = function(value, group, control) {
+	midi.sendShortMsg(
+		0x94 + PioneerDDJSR.effects[group].bank, 
+		0x47 + PioneerDDJSR.effects[group].index,
+		value ? 0x7F : 0x00);
 };
 
 // This handles LEDs related to the PFL / Headphone Cue event.
@@ -162,17 +182,14 @@ PioneerDDJSR.getJogWheelDelta = function(value) {
 // Toggle scratching for a channel
 PioneerDDJSR.toggleScratch = function(channel, isEnabled) {
 	var deck = channel + 1; 
-	if (isEnabled) 
-	{
+	if (isEnabled) {
         engine.scratchEnable(
 			deck, 
 			PioneerDDJSR.settings.jogResolution, 
 			PioneerDDJSR.settings.vinylSpeed, 
 			PioneerDDJSR.settings.alpha, 
 			PioneerDDJSR.settings.beta);
-    }
-    else 
-	{
+    } else {
         engine.scratchDisable(deck);
     }
 };
@@ -203,8 +220,7 @@ PioneerDDJSR.scheduleDisableScratch = function(channel, group) {
 
 // If scratch-disabling has been schedule, then unschedule it.
 PioneerDDJSR.unscheduleDisableScratch = function(group) {
-	if (PioneerDDJSR.channels[group].disableScratchTimer)
-	{
+	if (PioneerDDJSR.channels[group].disableScratchTimer) {
 		engine.stopTimer(PioneerDDJSR.channels[group].disableScratchTimer);
 	}
 };
@@ -212,7 +228,7 @@ PioneerDDJSR.unscheduleDisableScratch = function(group) {
 // Detect when the user touches and releases the jog-wheel while 
 // jog-mode is set to vinyl to enable and disable scratching.
 PioneerDDJSR.jogScratchTouch = function(channel, control, value, status, group) {
-	if (value == 0x7F) {
+	if (value === 0x7F) {
 		PioneerDDJSR.unscheduleDisableScratch(group);	
 		PioneerDDJSR.toggleScratch(channel, true);
 	} else {
@@ -278,7 +294,7 @@ PioneerDDJSR.jogSeekTurn = function(channel, control, value, status, group) {
 PioneerDDJSR.RollPerformancePad = function(performanceChannel, control, value, status, group) {
 	var interval = PioneerDDJSR.settings.loopIntervals[control - 0x10 + 2];
 	
-	if (value == 0x7F) {
+	if (value === 0x7F) {
 		engine.setValue(group, 'beatlooproll_' + interval + '_activate', 1);
 	} else {
 		engine.setValue(group, 'beatlooproll_' + interval + '_activate', 0);
@@ -310,7 +326,7 @@ PioneerDDJSR.RotarySelector = function(channel, control, value, status) {
 
 PioneerDDJSR.RotarySelectorClick = function(channel, control, value, status) {
 	// Only trigger when the button is pressed down, not when it comes back up.
-	if (value == 0x7F) {	
+	if (value === 0x7F) {	
 		var tracklist = PioneerDDJSR.enumerations.rotarySelector.targets.tracklist;
 		var libraries = PioneerDDJSR.enumerations.rotarySelector.targets.libraries;
 				
@@ -329,7 +345,7 @@ PioneerDDJSR.RotarySelectorClick = function(channel, control, value, status) {
 };
 
 PioneerDDJSR.LpfHpfToggle = function(channel, control, value, status, group) {
-	engine.setValue('[QuickEffectRack1_' + group + '_Effect1]', 'enabled', value == 0x7F);
+	engine.setValue('[QuickEffectRack1_' + group + '_Effect1]', 'enabled', value === 0x7F);
 };
 
 PioneerDDJSR.filterKnobLSB = function(channel, control, value, status, group) {
@@ -340,6 +356,12 @@ PioneerDDJSR.filterKnobMSB = function(channel, control, value, status, group) {
 	var fullValue = (PioneerDDJSR.channels[group].filterKnob << 7) + value;
 	engine.setValue('[QuickEffectRack1_' + group + ']', 'super1', fullValue / 0x3FFF);
 };
+
+PioneerDDJSR.FxSelect = function(channel, control, value, status, group) {
+	if (value === 0x7F) {
+		engine.setValue(group, 'enabled', !engine.getValue(group, 'enabled'));
+	}
+}
 
 PioneerDDJSR.shutdown = function() {
 	PioneerDDJSR.BindControlConnections(true);

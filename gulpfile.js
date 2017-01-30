@@ -1,6 +1,6 @@
 var gulp = require('gulp');
-var ejs = require('gulp-ejs');
 var rename = require('gulp-rename');
+var ejs = require('gulp-ejs');
 
 var settings = { 
 	functionPrefix: 'PioneerDDJSR',
@@ -18,39 +18,41 @@ var compileJs = function() {
 };
 
 var compileXml = function() {
-	var playlist = require('./source/mappings/controls/playlist.js');
-	var mixer = require('./source/mappings/controls/mixer.js');
-	var channel = require('./source/mappings/controls/channel.js');
-	var jogWheel = require('./source/mappings/controls/jog-wheel.js');
-	var hotCue = require('./source/mappings/controls/performance-pads/hot-cue.js');
-	var roll = require('./source/mappings/controls/performance-pads/roll.js');
-	var sampler = require('./source/mappings/controls/performance-pads/sampler.js');
+	var paths = [
+		'./source/mappings/controls/playlist.js',
+		'./source/mappings/controls/mixer.js',
+		'./source/mappings/controls/channel.js',
+		'./source/mappings/controls/jog-wheel.js',
+		'./source/mappings/controls/performance-pads/hot-cue.js',
+		'./source/mappings/controls/performance-pads/roll.js',
+		'./source/mappings/controls/performance-pads/sampler.js',
+		'./source/mappings/controls/effects.js',
+	];
 
-	return gulp
-		.src('source/mappings/midi-mapping.xml')
-		.pipe(ejs({ settings: settings, controls: playlist }))
-		.pipe(ejs({ settings: settings, controls: mixer }))
-		.pipe(ejs({ settings: settings, controls: channel }))
-		.pipe(ejs({ settings: settings, controls: jogWheel }))
-		.pipe(ejs({ settings: settings, controls: hotCue }))
-		.pipe(ejs({ settings: settings, controls: roll }))
-		.pipe(ejs({ settings: settings, controls: sampler }))
+	var controls = [];
+	for (var i = 0; i < paths.length; i++) {
+		var manager = require(paths[i]);
+		controls = controls.concat(manager.controls);
+
+		// Remove the mapping from the require cache, otherwise 
+		// it won't be reloaded correctly when using `watch`.
+		delete require.cache[require.resolve(paths[i])];
+	}
+	
+	return gulp.src('source/mappings/midi-mapping.xml')
+		.pipe(ejs({ settings: settings, controls: controls }))
 		.pipe(rename(settings.filePrefix + '.midi.xml'))
 		.pipe(gulp.dest('bin'));
 };
 
+var copyToLocalAppData = function() {
+	return gulp.src(['bin/**/*.*'])
+		.pipe(gulp.dest(process.env.LOCALAPPDATA + '/Mixxx/controllers'));
+};
+
 gulp.task('compile-xml', compileXml);
-
 gulp.task('compile-js', compileJs);
-
-gulp.task(
-	'default',
-	['compile-xml', 'compile-js'],
-	function() {
-		return gulp.src(['bin/**/*.*'])
-			.pipe(gulp.dest(process.env.LOCALAPPDATA + '/Mixxx/controllers'));
-	}
-);
+gulp.task('default', ['compile-xml', 'compile-js'], copyToLocalAppData);
 
 gulp.task(
 	'watch',

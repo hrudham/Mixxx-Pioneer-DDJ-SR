@@ -1,8 +1,9 @@
-var controlManager = function() {};
+var ControlManager = function() 
+{
+	this.controls = [];
+};
 
-controlManager.controls = [];
-
-controlManager.getHexString = function(number) 
+ControlManager.prototype.getHexString = function(number) 
 {
 	var hex = number.toString(16);
 	
@@ -21,8 +22,15 @@ controlManager.getHexString = function(number)
 		manager.add('[group]', 'prefix.function', 0x00, 0x00); 									// 'script-bindings' are  detected.
 		manager.add('group', 'key', '0x00', '0x00', 'soft-takeover');							// specify a single option, 'soft-takeover' in this case.
 		manager.add('group', 'key', '0x00', '0x00', [ 'soft-takeover', 'another-option' ]); 	// specify multiple options
+
+	Real example:
+		If you see the follow for your play button in the console:
+			Debug [Controller]: "MIDI t:1203674 ms status 0x90 (ch 1, opcode 0x9), ctrl 0x0B, val 0x00"
+		then use the following code:
+			manager.add('Channel1', 'play', 0x90, 0x0B);
+                                                                                           
 */
-controlManager.add = function(group, key, status, midino, options) 
+ControlManager.prototype.add = function(group, key, status, midino, options) 
 {
 	if (options == null)
 	{
@@ -46,14 +54,14 @@ controlManager.add = function(group, key, status, midino, options)
 		group = '[' + group + ']';
 	}
 
-	controlManager.controls.push(
+	this.controls.push(
 		{
 			group: group, 
 			key: key,
-			midino: controlManager.getHexString(midino),
-			status: controlManager.getHexString(status),
+			midino: this.getHexString(midino),
+			status: this.getHexString(status),
 			options: options
 		});
 };
 
-module.exports = controlManager;
+module.exports = ControlManager;

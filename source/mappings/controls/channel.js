@@ -1,4 +1,6 @@
-var manager = require('./../../../control-manager.js');
+var ControlManager = require('./../../../control-manager.js');
+
+var manager = new ControlManager();
 
 // Generate mappings for four channels.
 for (var channelIndex = 0; channelIndex < 4; channelIndex++) {
@@ -25,4 +27,4 @@ for (var channelIndex = 0; channelIndex < 4; channelIndex++) {
 	manager.add(group, 'PioneerDDJSR.filterKnobMSB', 0xB6, 0x37 + channelIndex);
 }
 
-module.exports = manager.controls;
+module.exports = manager;

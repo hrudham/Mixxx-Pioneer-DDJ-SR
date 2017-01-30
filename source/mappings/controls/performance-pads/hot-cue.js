@@ -1,4 +1,6 @@
-var manager = require('./../../../../control-manager.js');
+var ControlManager = require('./../../../../control-manager.js');
+
+var manager = new ControlManager();
 
 for (var channelIndex = 0; channelIndex < 4; channelIndex++) {
 	var group = 'Channel' + (channelIndex + 1);
@@ -11,4 +13,4 @@ for (var channelIndex = 0; channelIndex < 4; channelIndex++) {
 	}
 }
 
-module.exports = manager.controls;
+module.exports = manager;
