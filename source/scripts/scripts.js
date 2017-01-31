@@ -9,6 +9,8 @@ PioneerDDJSR.init = function(id) {
 		'[Channel3]': { index: 0x02 },
 		'[Channel4]': { index: 0x03 },
 	};
+
+	PioneerDDJSR.highPrecisionKnobs = {};
 	
 	PioneerDDJSR.settings = {
 		alpha: alpha,
@@ -348,20 +350,29 @@ PioneerDDJSR.LpfHpfToggle = function(channel, control, value, status, group) {
 	engine.setValue('[QuickEffectRack1_' + group + '_Effect1]', 'enabled', value === 0x7F);
 };
 
-PioneerDDJSR.filterKnobLSB = function(channel, control, value, status, group) {
-	PioneerDDJSR.channels[group].filterKnob = value;
+PioneerDDJSR.FilterKnobMsb = function(channel, control, value, status, group) {
+	PioneerDDJSR.channels[group].filter = value;
 }
 
-PioneerDDJSR.filterKnobMSB = function(channel, control, value, status, group) {
-	var fullValue = (PioneerDDJSR.channels[group].filterKnob << 7) + value;
+PioneerDDJSR.FilterKnobLsb = function(channel, control, value, status, group) {
+	var fullValue = (PioneerDDJSR.channels[group].filter << 7) + value;
 	engine.setValue('[QuickEffectRack1_' + group + ']', 'super1', fullValue / 0x3FFF);
+};
+
+PioneerDDJSR.TempoMsb = function(channel, control, value, status, group) {
+	PioneerDDJSR.channels[group].tempo = value;
+};
+
+PioneerDDJSR.TempoLsb = function(channel, control, value, status, group) {
+	var fullValue = (PioneerDDJSR.channels[group].tempo << 7) + value;
+	engine.setParameter(group, 'rate', 1 - fullValue / 0x3FFF);
 };
 
 PioneerDDJSR.FxSelect = function(channel, control, value, status, group) {
 	if (value === 0x7F) {
-		engine.setValue(group, 'enabled', !engine.getValue(group, 'enabled'));
+		script.toggleControl(group, "enabled");
 	}
-}
+};
 
 PioneerDDJSR.shutdown = function() {
 	PioneerDDJSR.BindControlConnections(true);

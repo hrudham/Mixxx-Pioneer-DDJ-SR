@@ -86,5 +86,5 @@ You can also optionally run `npm run watch`, which will rebuild the project any 
 ## Development Tips
 
 1. Run Mixxx from a terminal with the `--controllerDebug --developer` arguments. This gives you all debug output there from your controller, enables the `Developer` menu, and also provides you with additional development information in control tooltips.
-2. Mixxx does not recognise `console.log(...)`, but you can use `script.midiDebug(channel, control, value, status, group)` to achieve something similar. Most methods have the same argument signature anyway. This will output information into the terminal mentioned previously.
+2. Mixxx does not recognise `console.log(...)`, but you can use `engine.log(...)` instead.
 3. You do not necessarily have to restart Mixxx for it to detect changes, but it sometimes helps ;-)

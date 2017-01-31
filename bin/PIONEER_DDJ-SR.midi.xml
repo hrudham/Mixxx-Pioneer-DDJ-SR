@@ -57,15 +57,6 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>keylock</key>
-				<status>0x90</status>
-				<midino>0x1A</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel1]</group>
 				<key>beatsync</key>
 				<status>0x90</status>
 				<midino>0x58</midino>
@@ -102,20 +93,38 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>rate</key>
+				<key>volume</key>
 				<status>0xB0</status>
-				<midino>0x00</midino>
+				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
 				</options>
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>volume</key>
-				<status>0xB0</status>
-				<midino>0x13</midino>
+				<key>keylock</key>
+				<status>0x90</status>
+				<midino>0x1A</midino>
 				<options>
-					<soft-takeover />
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.TempoMsb</key>
+				<status>0xB0</status>
+				<midino>0x00</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>PioneerDDJSR.TempoLsb</key>
+				<status>0xB0</status>
+				<midino>0x20</midino>
+				<options>
+					<script-binding />
 				</options>
 			</control>
 			<control>
@@ -156,18 +165,18 @@
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>PioneerDDJSR.filterKnobLSB</key>
+				<key>PioneerDDJSR.FilterKnobLsb</key>
 				<status>0xB6</status>
-				<midino>0x17</midino>
+				<midino>0x37</midino>
 				<options>
 					<script-binding />
 				</options>
 			</control>
 			<control>
 				<group>[Channel1]</group>
-				<key>PioneerDDJSR.filterKnobMSB</key>
+				<key>PioneerDDJSR.FilterKnobMsb</key>
 				<status>0xB6</status>
-				<midino>0x37</midino>
+				<midino>0x17</midino>
 				<options>
 					<script-binding />
 				</options>
@@ -186,15 +195,6 @@
 				<key>pfl</key>
 				<status>0x91</status>
 				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel2]</group>
-				<key>keylock</key>
-				<status>0x91</status>
-				<midino>0x1A</midino>
 				<options>
 					<normal />
 				</options>
@@ -237,20 +237,38 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>rate</key>
+				<key>volume</key>
 				<status>0xB1</status>
-				<midino>0x00</midino>
+				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
 				</options>
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>volume</key>
-				<status>0xB1</status>
-				<midino>0x13</midino>
+				<key>keylock</key>
+				<status>0x91</status>
+				<midino>0x1A</midino>
 				<options>
-					<soft-takeover />
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.TempoMsb</key>
+				<status>0xB1</status>
+				<midino>0x00</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>PioneerDDJSR.TempoLsb</key>
+				<status>0xB1</status>
+				<midino>0x20</midino>
+				<options>
+					<script-binding />
 				</options>
 			</control>
 			<control>
@@ -291,18 +309,18 @@
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>PioneerDDJSR.filterKnobLSB</key>
+				<key>PioneerDDJSR.FilterKnobLsb</key>
 				<status>0xB6</status>
-				<midino>0x18</midino>
+				<midino>0x38</midino>
 				<options>
 					<script-binding />
 				</options>
 			</control>
 			<control>
 				<group>[Channel2]</group>
-				<key>PioneerDDJSR.filterKnobMSB</key>
+				<key>PioneerDDJSR.FilterKnobMsb</key>
 				<status>0xB6</status>
-				<midino>0x38</midino>
+				<midino>0x18</midino>
 				<options>
 					<script-binding />
 				</options>
@@ -321,15 +339,6 @@
 				<key>pfl</key>
 				<status>0x92</status>
 				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel3]</group>
-				<key>keylock</key>
-				<status>0x92</status>
-				<midino>0x1A</midino>
 				<options>
 					<normal />
 				</options>
@@ -372,20 +381,38 @@
 			</control>
 			<control>
 				<group>[Channel3]</group>
-				<key>rate</key>
+				<key>volume</key>
 				<status>0xB2</status>
-				<midino>0x00</midino>
+				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
 				</options>
 			</control>
 			<control>
 				<group>[Channel3]</group>
-				<key>volume</key>
-				<status>0xB2</status>
-				<midino>0x13</midino>
+				<key>keylock</key>
+				<status>0x92</status>
+				<midino>0x1A</midino>
 				<options>
-					<soft-takeover />
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.TempoMsb</key>
+				<status>0xB2</status>
+				<midino>0x00</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel3]</group>
+				<key>PioneerDDJSR.TempoLsb</key>
+				<status>0xB2</status>
+				<midino>0x20</midino>
+				<options>
+					<script-binding />
 				</options>
 			</control>
 			<control>
@@ -426,18 +453,18 @@
 			</control>
 			<control>
 				<group>[Channel3]</group>
-				<key>PioneerDDJSR.filterKnobLSB</key>
+				<key>PioneerDDJSR.FilterKnobLsb</key>
 				<status>0xB6</status>
-				<midino>0x19</midino>
+				<midino>0x39</midino>
 				<options>
 					<script-binding />
 				</options>
 			</control>
 			<control>
 				<group>[Channel3]</group>
-				<key>PioneerDDJSR.filterKnobMSB</key>
+				<key>PioneerDDJSR.FilterKnobMsb</key>
 				<status>0xB6</status>
-				<midino>0x39</midino>
+				<midino>0x19</midino>
 				<options>
 					<script-binding />
 				</options>
@@ -456,15 +483,6 @@
 				<key>pfl</key>
 				<status>0x93</status>
 				<midino>0x54</midino>
-				<options>
-					<normal />
-				</options>
-			</control>
-			<control>
-				<group>[Channel4]</group>
-				<key>keylock</key>
-				<status>0x93</status>
-				<midino>0x1A</midino>
 				<options>
 					<normal />
 				</options>
@@ -507,20 +525,38 @@
 			</control>
 			<control>
 				<group>[Channel4]</group>
-				<key>rate</key>
+				<key>volume</key>
 				<status>0xB3</status>
-				<midino>0x00</midino>
+				<midino>0x13</midino>
 				<options>
 					<soft-takeover />
 				</options>
 			</control>
 			<control>
 				<group>[Channel4]</group>
-				<key>volume</key>
-				<status>0xB3</status>
-				<midino>0x13</midino>
+				<key>keylock</key>
+				<status>0x93</status>
+				<midino>0x1A</midino>
 				<options>
-					<soft-takeover />
+					<normal />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.TempoMsb</key>
+				<status>0xB3</status>
+				<midino>0x00</midino>
+				<options>
+					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel4]</group>
+				<key>PioneerDDJSR.TempoLsb</key>
+				<status>0xB3</status>
+				<midino>0x20</midino>
+				<options>
+					<script-binding />
 				</options>
 			</control>
 			<control>
@@ -561,18 +597,18 @@
 			</control>
 			<control>
 				<group>[Channel4]</group>
-				<key>PioneerDDJSR.filterKnobLSB</key>
+				<key>PioneerDDJSR.FilterKnobLsb</key>
 				<status>0xB6</status>
-				<midino>0x1A</midino>
+				<midino>0x3A</midino>
 				<options>
 					<script-binding />
 				</options>
 			</control>
 			<control>
 				<group>[Channel4]</group>
-				<key>PioneerDDJSR.filterKnobMSB</key>
+				<key>PioneerDDJSR.FilterKnobMsb</key>
 				<status>0xB6</status>
-				<midino>0x3A</midino>
+				<midino>0x1A</midino>
 				<options>
 					<script-binding />
 				</options>
@@ -1847,12 +1883,30 @@
 				</options>
 			</control>
 			<control>
+				<group>[EffectRack1_EffectUnit1]</group>
+				<key>mix</key>
+				<status>0xB4</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
 				<group>[EffectRack1_EffectUnit2]</group>
 				<key>PioneerDDJSR.FxSelect</key>
 				<status>0x94</status>
 				<midino>0x48</midino>
 				<options>
 					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[EffectRack1_EffectUnit2]</group>
+				<key>mix</key>
+				<status>0xB4</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
 				</options>
 			</control>
 			<control>
@@ -1865,12 +1919,30 @@
 				</options>
 			</control>
 			<control>
+				<group>[EffectRack1_EffectUnit3]</group>
+				<key>mix</key>
+				<status>0xB5</status>
+				<midino>0x02</midino>
+				<options>
+					<normal />
+				</options>
+			</control>
+			<control>
 				<group>[EffectRack1_EffectUnit4]</group>
 				<key>PioneerDDJSR.FxSelect</key>
 				<status>0x95</status>
 				<midino>0x48</midino>
 				<options>
 					<script-binding />
+				</options>
+			</control>
+			<control>
+				<group>[EffectRack1_EffectUnit4]</group>
+				<key>mix</key>
+				<status>0xB5</status>
+				<midino>0x04</midino>
+				<options>
+					<normal />
 				</options>
 			</control>
 		</controls>
